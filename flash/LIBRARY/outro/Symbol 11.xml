@@ -1,0 +1,42 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="outro/Symbol 11" itemID="6441820b-00000232" lastModified="1682014731">
+  <timeline>
+    <DOMTimeline name="Symbol 11" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMGroup selected="true">
+                  <matrix>
+                    <Matrix tx="0.1" ty="727.3"/>
+                  </matrix>
+                  <members>
+                    <DOMShape selected="true">
+                      <matrix>
+                        <Matrix tx="0.1" ty="727.3"/>
+                      </matrix>
+                      <fills>
+                        <FillStyle index="1">
+                          <LinearGradient>
+                            <matrix>
+                              <Matrix a="0" b="0.26861572265625" c="-0.226593017578125" d="0" tx="1.95" ty="-727.3"/>
+                            </matrix>
+                            <GradientEntry color="#FFFFFF" alpha="0.4" ratio="0"/>
+                            <GradientEntry color="#FFFFFF" alpha="0" ratio="1"/>
+                          </LinearGradient>
+                        </FillStyle>
+                      </fills>
+                      <edges>
+                        <Edge fillStyle1="1" edges="!-3673 -18947S2|3752 -18947!3752 -18947|5128 -10145!5128 -10145|-5133 -10145!-5133 -10145|-3673 -18947"/>
+                      </edges>
+                    </DOMShape>
+                  </members>
+                </DOMGroup>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

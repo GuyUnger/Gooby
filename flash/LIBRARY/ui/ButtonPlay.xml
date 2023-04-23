@@ -1,0 +1,46 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ui/ButtonPlay" itemID="64388da4-00000064" symbolType="button" lastModified="1682009325">
+  <timeline>
+    <DOMTimeline name="ButtonPlay">
+      <layers>
+        <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true" heightLiteral="32">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMStaticText left="-29.1" width="202.2" height="115.2" autoExpand="true" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="-75.4" ty="-61.2"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>PLAY</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" lineHeight="115.2" size="90" bitmapSize="1800" face="BoldenVan" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMStaticText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMStaticText left="-29.1" width="202.2" height="115.2" autoExpand="true" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="-75.4" ty="-61.2"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>PLAY</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" lineHeight="115.2" size="90" bitmapSize="1800" face="BoldenVan" fillColor="#ECA032"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMStaticText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

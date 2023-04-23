@@ -1,0 +1,136 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Warp" itemID="6438b7b1-000000cf" linkageExportForAS="true" linkageBaseClass="Node2D" linkageClassName="Warp" lastModified="1682037134">
+  <timeline>
+    <DOMTimeline name="Warp" currentFrame="1" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="Layer_3" color="#FF800A" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[var scalex = scaleX * 100;
+var scaley = scaleY * 100;
+if (Math.abs((rotation / 180) % 1) > 0.1) {
+	var a = scalex;
+	scalex = scaley;
+	scaley = a;
+}]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();
+
+var t = 0;
+
+var entered = false;
+var entered_t = 0;
+
+var was_visible = visible
+
+trace(parent)
+function _process(delta) {
+	t += delta;
+	if (t < 0.5) return
+	visible=!Game.fighting
+	if (!visible || Game.main.up.visible || Game.growing) {
+		return;
+	}
+	if (Math.abs(Game.player.x - x) < scalex && Math.abs(Game.player.y - y) < scaley) {
+		if (!entered) {
+			entered = true;
+			MovieClip(Game.room.parent).trans.play();
+			var direction_x = Math.cos((rotation) / 180 * Math.PI);
+			var direction_y = Math.sin((rotation) / 180 * Math.PI);
+			Game.player.force_direction(direction_x, direction_y);
+		}
+	}
+	if (entered) {
+		entered_t += 1;
+	}
+	if (entered_t > 9) {
+		trace("AAA")
+		var from = MovieClip(parent.parent).currentLabel;
+
+		Game.enemies=0
+		MovieClip(parent.parent).gotoAndStop(name);
+		var player = Game.player;
+		var spawn = Game.room[from];
+		if(!spawn) return
+		direction_x = Math.cos((spawn.rotation + 180) / 180 * Math.PI);
+		direction_y = Math.sin((spawn.rotation + 180) / 180 * Math.PI);
+
+		player.x = spawn.x + direction_x * (spawn.scalex);
+		player.y = spawn.y + direction_y * (spawn.scaley);
+
+		player.force_direction(direction_x, direction_y);
+	}
+}]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_1" color="#00FFFF" heightLiteral="32">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal">
+                        <fill>
+                          <SolidColor color="#FF0A0A"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge strokeStyle="1" edges="!581 41|141 481!-520 41|581 41!581 41|211 -329!-1000 -1000|1000 -1000!1000 -1000|1000 1000!1000 1000|-1000 1000!-1000 1000|-1000 -1000"/>
+                  </edges>
+                </DOMShape>
+                <DOMGroup>
+                  <members>
+                    <DOMShape>
+                      <strokes>
+                        <StrokeStyle index="1">
+                          <SolidStroke scaleMode="normal">
+                            <fill>
+                              <SolidColor color="#C3FF00"/>
+                            </fill>
+                          </SolidStroke>
+                        </StrokeStyle>
+                      </strokes>
+                      <edges>
+                        <Edge strokeStyle="1" edges="!-3015 -999|-999 -999!-999 -999|-999 1002!-999 1002|-3015 1002!-3015 1002|-3015 -999"/>
+                      </edges>
+                    </DOMShape>
+                  </members>
+                </DOMGroup>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <LinearGradient>
+                        <matrix>
+                          <Matrix a="0.101333618164062" d="0.0610504150390625" tx="-131.8" ty="0.1"/>
+                        </matrix>
+                        <GradientEntry color="#FFF3A5" alpha="0" ratio="0"/>
+                        <GradientEntry color="#FFFFFF" alpha="0.247058823529412" ratio="1"/>
+                      </LinearGradient>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-4297 -999|-976 -999!-976 -999|-976 1002!-976 1002|-4297 1002!-4297 1002|-4297 -999"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

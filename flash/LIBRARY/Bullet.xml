@@ -1,0 +1,42 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Bullet" itemID="6440c872-000001cc" linkageExportForAS="true" linkageBaseClass="Node2D" linkageClassName="Bullet" lastModified="1681968141">
+  <timeline>
+    <DOMTimeline name="Bullet" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="Layer_2" color="#9933CC" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[function _process(delta){
+	x+=velocity_x*delta
+	y+=velocity_y*delta
+	var distance=distance_to(Game.player)
+	if(distance<50){
+		queue_free()
+		Game.player.hit(self,1)
+	}
+}]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_1" color="#00FFFF" heightLiteral="32">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 58" name="b">
+                  <matrix>
+                    <Matrix ty="-40.2"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05" y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

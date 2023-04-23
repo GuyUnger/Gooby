@@ -1,0 +1,178 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="player/PlayerAnimations" itemID="64319400-0000001a" lastModified="1682052568" lastUniqueIdentifier="5">
+  <timeline>
+    <DOMTimeline name="PlayerAnimations" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="Layer_2" color="#9933CC" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" name="idle" labelType="name" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[var walking = false
+var shooting =false
+
+var size_to=1
+var size_leg_to=1
+var size = 1
+var size_leg = 1
+
+var walking_t = 0.0
+
+var jiggle_t=0
+
+var stepped = false
+var back=false
+var was_back=false
+var was_walking=false
+
+var growing
+var growing_scale = 0
+
+var start_step=false
+
+var donea=false
+
+function force_size(){
+size=size_to
+size_leg=size_leg_to
+}
+
+var frame=0
+
+var step1_s = new Step1()
+var step2_s = new Step2()
+
+function _process(delta) {
+
+size += (size_to-size)*delta*3
+size_leg += (size_leg_to-size_leg)*delta*3
+
+var scale_add = size / 60.0
+
+gooby.head.scaleX = 1 + scale_add * 0.5
+gooby.head.scaleY = gooby.head.scaleX
+
+if(was_back != back){
+was_back = back
+
+if(frame>4){
+gooby.setChildIndex(gooby.head, back?0:gooby.numChildren-1)
+}
+}
+
+shadow.scaleX = 1 + scale_add * 0.8
+shadow.scaleY = shadow.scaleX
+
+var _size=Math.round(size)
+var _size_leg=Math.round(size_leg)
+
+gooby.gotoAndStop(_size)
+
+frame++
+	gooby.head.gotoAndStop((shooting?2:1)+(back?2:0))
+
+if (walking) {
+was_walking=true
+walking_t += delta * 1.5 * (0.8 + MovieClip(parent).speed/300)
+var cycle = walking_t % 1
+
+gooby.y = Math.max(Math.abs(Math.sin(walking_t * Math.PI * 2)) - 0.2, 0)
+gooby.y = 1 - Math.pow(1 - gooby.y, 1.5)
+gooby.y *= -30.0
+var frame_l = 0
+var frame_r = 0
+
+if (cycle > 0.1 && cycle < 0.4) {
+frame_l = 1
+frame_r = 2
+gooby.rotation=-5
+stepped=false
+} else if (cycle > 0.6 && cycle < 0.9) {
+frame_l = 2
+frame_r = 1
+gooby.rotation=5
+stepped=false
+}else{
+gooby.rotation=0
+if (!stepped){
+stepped=true
+jiggle_t = 1
+if(cycle<0.5){step1_s.play()
+}else{step2_s.play()
+}
+}
+}
+gooby.leg_l.gotoAndStop(_size_leg + frame_l * 10)
+gooby.leg_r.gotoAndStop(_size_leg + frame_r * 10)
+} else{
+if(was_walking){
+start_step=!start_step
+walking_t=start_step?0.1:0.6
+jiggle_t=1
+was_walking=false
+
+}
+gooby.rotation=0
+gooby.y=0
+gooby.leg_l.gotoAndStop(_size_leg)
+gooby.leg_r.gotoAndStop(_size_leg)
+
+}
+if (growing && !donea){
+growing_scale += delta * 0.2
+if(growing_scale>0.4){
+	Game.main.gotoAndStop("end")
+donea=true
+}
+}
+
+jiggle_t=move_toward(jiggle_t,0,delta / .5)
+scaleX = (1-Math.sin(jiggle_t*Math.PI*4)*jiggle_t*.1)*.5+growing_scale
+scaleY = (1+Math.sin(jiggle_t*Math.PI*4)*jiggle_t*.1)*.5+growing_scale
+}
+
+function move_toward(from,to,delta){
+if(from>to){
+from -= delta
+	if (from<to){
+		from=to
+	}
+}else if(from<to){
+from+=delta
+if (from>to){
+from=to
+}
+}
+return from
+}]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_1" color="#00FFFF" heightLiteral="32">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="player/shadow" name="shadow">
+                  <matrix>
+                    <Matrix tx="16.6" ty="-4.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="player/Symbol 1 copy 2" name="gooby">
+                  <matrix>
+                    <Matrix a="0.5" d="0.5" tx="16.95" ty="7.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

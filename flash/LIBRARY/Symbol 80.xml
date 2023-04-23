@@ -1,0 +1,134 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 80" itemID="6441b2a2-000003fe" lastModified="1682214636" lastUniqueIdentifier="1">
+  <timeline>
+    <DOMTimeline name="Symbol 80" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="Layer_3" color="#FF800A" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" duration="371" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[//Game.main.play_music(new SongCredits())]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="371" duration="3" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop()]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_4" color="#FF4FFF">
+          <frames>
+            <DOMFrame index="0" duration="336" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="336" duration="38" keyMode="9728">
+              <elements>
+                <DOMGroup>
+                  <matrix>
+                    <Matrix tx="211.85" ty="43.8"/>
+                  </matrix>
+                  <members>
+                    <DOMStaticText selected="true" left="-644" width="788" height="83.2" autoExpand="true" isSelectable="false">
+                      <matrix>
+                        <Matrix tx="352.95" ty="184.6"/>
+                      </matrix>
+                      <textRuns>
+                        <DOMTextRun>
+                          <characters>THANK YOU FOR PLAYING!</characters>
+                          <textAttrs>
+                            <DOMTextAttrs alignment="center" aliasText="false" lineHeight="83.2" size="65" bitmapSize="1300" face="BoldenVan" fillColor="#FFFFFF"/>
+                          </textAttrs>
+                        </DOMTextRun>
+                      </textRuns>
+                    </DOMStaticText>
+                  </members>
+                </DOMGroup>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_2" color="#9933CC">
+          <frames>
+            <DOMFrame index="0" duration="336" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="336" duration="38" keyMode="9728">
+              <elements>
+                <DOMGroup>
+                  <matrix>
+                    <Matrix ty="-1.05"/>
+                  </matrix>
+                  <members>
+                    <DOMStaticText left="-436.95" width="373.9" height="94.2" autoExpand="true" isSelectable="false">
+                      <matrix>
+                        <Matrix tx="352.95" ty="249.9"/>
+                      </matrix>
+                      <textRuns>
+                        <DOMTextRun>
+                          <characters>a game by Guy Unger&#xD;thanks to SupaBubba</characters>
+                          <textAttrs>
+                            <DOMTextAttrs alignment="center" aliasText="false" lineHeight="46.1" size="36" bitmapSize="720" face="BoldenVan" fillColor="#FFFFFF"/>
+                          </textAttrs>
+                        </DOMTextRun>
+                      </textRuns>
+                    </DOMStaticText>
+                  </members>
+                </DOMGroup>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_1" color="#00FFFF" heightLiteral="32">
+          <frames>
+            <DOMFrame index="0" duration="56" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 81">
+                  <matrix>
+                    <Matrix tx="190.4" ty="123.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05" y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="56" duration="279" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all" name="My Ease 9">
+                  <Point/>
+                  <Point x="0.559"/>
+                  <Point x="0.5935" y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 81" selected="true" centerPoint3DX="190.35" centerPoint3DY="123.2">
+                  <matrix>
+                    <Matrix tx="190.4" ty="123.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05" y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="335" duration="39" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 81" centerPoint3DX="-315.75" centerPoint3DY="123.2">
+                  <matrix>
+                    <Matrix tx="-315.7" ty="123.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05" y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

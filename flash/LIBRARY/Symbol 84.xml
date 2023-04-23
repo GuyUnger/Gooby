@@ -1,0 +1,51 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 84" itemID="644212ae-000002ce" lastModified="1682052213">
+  <timeline>
+    <DOMTimeline name="Symbol 84" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true" heightLiteral="32">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!168 -390[#70.FB #FFFE5E.FD 9 -469!9 -469[#1.73 #FFFE27.56 -6.5 -470!-6.5 -470[#FFFFF6.55 #FFFE2B.0F -12 -467!-12 -467[#FFFF49.6D #FFFE87.69 -235 -350!-235 -350|-235 -349.5!-235 -349.5[#FFFEE1.E9 #FFFEBC.E2 -400.5 -270.5!-400.5 -270.5
+[#FFFE16.99 #FFFEF8.A6 -545.5 -273.5!-545.5 -273.5[-604.875 #FFFEE2.E7 -731 -278!-731 -278|-731.5 -278!-731.5 -278[#FFFCAA.7F -270 -970.5 -261!-970.5 -261[#FFFBC1.B8 #FFFF03.EB -1208 -258!-1208 -258[#FFFACE.01 #FFFEF8.FF -1441 -269!-1441
+ -269[#FFF9F0.88 #FFFEED.FE -1683 -275!-1683 -275[#FFF8EA.BD #FFFEEC.FF -1928.5 -273!-1928.5 -273[#FFF805.46 #FFFEF0.FE -2174 -264!-2174 -264[#FFF700.61 #FFFEFF.E9 -2409.5 -263!-2409.5 -263[#FFF62B.46 #FFFEF2.03 -2649 -271!-2649 -271
+|-2653 -271!-2653 -271[#FFF59C.08 #FFFEF2.12 -2665 -264.5!-2665 -264.5[#FFF591.DD #FFFEFD.4E -2670 -251!-2670 -251|-2670 -250!-2670 -250[#FFF59B.E2 -34.890625 -2665 28.5!-2665 28.5[#FFF591.FA #5D.0B -2671 211!-2671 211[-2671 #147.C2 -2670
+ 450.5!-2670 450.5|-2670 451!-2670 451|-2669.5 455!-2669.5 455[#FFF593.58 #1CC.8B -2664.5 465!-2664.5 465[#FFF59D.3C #1D6.E7 -2650.5 471!-2650.5 471|-2650 471!-2650 471|-2646 470.5!-2646 470.5[#FFF5AF.8B #1D5.A4 -2636 465.5!-2636 465.5
+[#FFF5C4.B8 #1C4.C4 -2566.5 456!-2566.5 456[#FFF63B.A9 461 -2385 466!-2385 466[#FFF722.7C #1D7.02 -2145 471!-2145 471[#FFF81B.87 #1D7.05 -1907 464!-1907 464[#FFF8FE.09 #1C9.0F -1675 461!-1675 461[#FFF9ED.81 #1D1.FF -1433 476!-1433 476
+[#FFFAE2.CB #1E7.21 -1192.5 479!-1192.5 479[#FFFBCB.07 #1D7.03 -949.5 469!-949.5 469[#FFFCCA.FD #1D3.01 -700.5 469!-700.5 469[#FFFDBD.C2 471 -465 471!-465 471[#FFFEA1.3D #1D7.01 -227.5 468!-227.5 468[#FFFF97.C1 #1D2.04 13 458!13 458|13.5
+ 458!13.5 458[#81.85 #1C3.33 247.5 466!247.5 466[#170.83 #1E2.0B 485.5 483!485.5 483|486 483!486 483[#25A.FD #1E5.0A 725 474!725 474[#34D.51 #1CF.24 975.5 473!975.5 473[#454.8E #1E3.0C 1226.5 481!1226.5 481[1343.5 479 1453.5 477!1453.5
+ 477[#61B.07 #1DB.01 1693.5 477!1693.5 477[#721.02 #1E0.04 1940.5 475!1940.5 475[#808.3C #1D7.01 2163 471!2163 471[2271 471 2399 471!2399 471[#9DF.BD #1D7.FF 2649.5 471!2649.5 471|2650 471!2650 471|2654 470.5!2654 470.5[#A63.9 #1D5.A5
+ 2664 465.5!2664 465.5[#A6D.E9 #1CB.BE 2670 451.5!2670 451.5|2670 451!2670 451[#A71.0B #F5.F1 2667 173.5!2667 173.5[#A66.3A #68.02 2676 -16.5!2676 -16.5[#A82.0A #FFFF72.CA 2670 -252!2670 -252[#A6D.C6 #FFFEFF.EF 2668 -259.5!2668 -259.5
+[#A69.ED #FFFEF7.B1 2661.5 -267.5!2661.5 -267.5[#A61.87 #FFFEF1.D4 2653 -270.5!2653 -270.5[#A5B.9C #FFFEF1.04 2650 -271!2650 -271[#9F9.7D #FFFEF0.EF 2492.5 -264!2492.5 -264[#981.C8 #FFFEFF.B5 2316.5 -266!2316.5 -266[#893.7B #FFFEEC.F4
+ 2078.5 -273!2078.5 -273[#7AB.BE #FFFEF0.FF 1840 -271!1840 -271[#6B4.BF #FFFEF1.FF 1595.5 -266!1595.5 -266|1595 -266!1595 -266[#5C3.C2 -261.125 1357.5 -275!1357.5 -275[#4D3.8C #FFFEDE.CE 1107.5 -279!1107.5 -279|1107 -279!1107 -279[#3D7.08
+ #FFFEF3.F7 869 -267!869 -267[#2F3.3C #FFFEF5.FE 628.5 -269!628.5 -269[#1F7.FD #FFFEF0.0F 399.5 -271!399.5 -271[#DF.17 #FFFE94.CD 167.5 -390!167.5 -390|168 -390"/>
+                  </edges>
+                </DOMShape>
+                <DOMDynamicText name="lbl" left="-37.7" width="238" height="24.3" isSelectable="false" lineType="multiline">
+                  <matrix>
+                    <Matrix tx="-81.3" ty="-7.5"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>Shoot faster</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" lineHeight="24.3" size="19" bitmapSize="380" face="BoldenVan" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

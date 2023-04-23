@@ -1,0 +1,36 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="player/shadow" itemID="643cac33-000002b8" lastModified="1681697843">
+  <timeline>
+    <DOMTimeline name="shadow" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMGroup selected="true">
+                  <matrix>
+                    <Matrix a="1.711669921875" d="1.711669921875" ty="-0.05"/>
+                  </matrix>
+                  <members>
+                    <DOMShape selected="true">
+                      <matrix>
+                        <Matrix a="1.711669921875" d="1.711669921875" ty="-0.05"/>
+                      </matrix>
+                      <fills>
+                        <FillStyle index="1">
+                          <SolidColor color="#23201F" alpha="0.498039215686275"/>
+                        </FillStyle>
+                      </fills>
+                      <edges>
+                        <Edge fillStyle1="1" edges="!770 0S2[770 73 544 125!544 125[319 177 0 177!0 177[-319 177 -544 125!-544 125[-770 73 -770 0!-770 0[-770 -73 -544 -124!-544 -124[-319 -176 0 -176!0 -176[319 -176 544 -124!544 -124[770 -73 770 0"/>
+                      </edges>
+                    </DOMShape>
+                  </members>
+                </DOMGroup>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

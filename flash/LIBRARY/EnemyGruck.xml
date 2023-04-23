@@ -1,0 +1,121 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EnemyGruck" itemID="6440c334-000001c3" linkageExportForAS="true" linkageBaseClass="Enemy" linkageClassName="EnemyGruck" lastModified="1682105091">
+  <timeline>
+    <DOMTimeline name="EnemyGruck" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="Layer_3" color="#FF800A" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[var accel: Number
+
+health=14
+
+speed = 100.0 + Math.random() * 100.0
+accel = 2.0 + Math.random() * 2.0
+
+var aiming = false
+var aiming_t = 0.5+Math.random()*1
+
+function _process(delta) {
+	if(!visible)return
+	var velocity_to_x = direction_to_player_x
+	var velocity_to_y = direction_to_player_y
+	
+aiming_t-=delta
+	if (aiming_t<0){
+velocity_to_x=0
+velocity_to_y=0
+		if(aiming_t<-0.5){
+			shoot()
+		}
+		m.gotoAndStop("aiming")
+	}else{
+m.play()
+}
+
+	velocity_to_x *= speed
+	velocity_to_y *= speed
+	
+	velocity_x += (velocity_to_x - velocity_x) * delta * accel * 1.5
+	velocity_y += (velocity_to_y - velocity_y) * delta * accel * 1.5
+	
+	scaleX = direction_to_player_x < 0 ? -1 : 1
+	
+	x += velocity_x * delta
+	y += velocity_y * delta
+}
+
+function shoot(){
+var dist = distance_to(Game.player)
+if (dist == 0) return
+
+aiming_t=0.5+Math.random()*1.0
+
+var bullet = new Bullet()
+parent.addChild(bullet)
+
+var aim_direction_x = (Game.player.x - x) / dist;
+var aim_direction_y = (Game.player.y - y) / dist;
+
+bullet.b.rotation=Math.atan2(aim_direction_y,aim_direction_x)/Math.PI*180
+bullet.x=x+aim_direction_x*30
+bullet.y=y+aim_direction_y*30
+bullet.velocity_x=aim_direction_x*400
+bullet.velocity_y=aim_direction_y*400
+}
+
+
+]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_1" color="#00FFFF" heightLiteral="32">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="gruck" name="m">
+                  <matrix>
+                    <Matrix tx="1.75" ty="-12.2"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_2" color="#9933CC">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMGroup>
+                  <matrix>
+                    <Matrix a="0.83258056640625" d="0.83258056640625" tx="-3.35" ty="-4.85"/>
+                  </matrix>
+                  <members>
+                    <DOMShape>
+                      <matrix>
+                        <Matrix a="0.83258056640625" d="0.83258056640625" tx="-3.35" ty="-4.85"/>
+                      </matrix>
+                      <fills>
+                        <FillStyle index="1">
+                          <SolidColor color="#23201F" alpha="0.498039215686275"/>
+                        </FillStyle>
+                      </fills>
+                      <edges>
+                        <Edge fillStyle1="1" edges="!1005 33[1005 120 734 182!734 182[464 245 81 245!81 245[-303 245 -573 182!-573 182[-844 120 -844 33!-844 33[-844 -55 -573 -117!-573 -117[-303 -179 81 -179!81 -179[464 -179 734 -117!734 -117[1005 -55 1005 33"/>
+                      </edges>
+                    </DOMShape>
+                  </members>
+                </DOMGroup>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

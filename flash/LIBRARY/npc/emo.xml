@@ -1,0 +1,171 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="npc/emo" itemID="6430660b-00000012" linkageExportForAS="true" linkageBaseClass="Node2D" linkageClassName="Emo" lastModified="1681758678" lastUniqueIdentifier="1">
+  <timeline>
+    <DOMTimeline name="emo" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="Layer_4" color="#FF4FFF" heightLiteral="32">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[import flash.geom.Point;
+
+var head
+
+var following
+
+function _process(delta) {
+	var dist = distance(x, y, following.x, following.y)
+	if (dist > 100) {
+		var direction_x: Number = (following.x - x) / dist
+		var direction_y: Number = (following.y - y) / dist
+		
+		direction_y *= 0.8
+		
+		if (direction_x < 0)
+			scaleX  = -1
+		if (direction_x > 0)
+			scaleX = 1
+		
+		var speed = 250.0
+		var accel = 20.0
+		velocity_x += (direction_x * speed - velocity_x) * accel * delta
+		velocity_y += (direction_y * speed - velocity_y) * accel * delta
+		
+		anim("walk")
+	} else {
+		velocity_x -= velocity_x * delta * 4.0
+		velocity_y -= velocity_y * delta * 4.0
+		
+		anim("idle")
+	}
+	
+	move_and_slide()
+	
+	process_shooting(delta)
+	
+	model.head.gotoAndStop(head * 2 - 1)
+}
+]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="attack" color="#009999" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[var distance_to_enemy
+
+var reload_t: Number = 0.0
+var attack_t: Number = 0.0
+
+var attack_damage = 4
+var attack_speed: Number = 500.0
+var attack_burst = 1
+
+var burst_queue = 0
+var burst_reload_t: Number = 0.0
+
+var aim_direction_x: Number = 0.0
+var aim_direction_y: Number = 0.0
+
+var aiming_enemy
+
+function process_shooting(delta) {
+	reload_t -= delta
+	if (reload_t < 0) {
+		var enemies = MovieClip(parent).enemies
+		var closest_enemy
+		var closest_enemy_dist = 999999999.0
+		for(var i:int = 0; i < enemies.length; i++) {
+			var enemy = enemies[i]
+			var dx = enemy.x - x
+			var dy = enemy.y - y
+			var dist = dx*dx + dy*dy
+			if (dist < closest_enemy_dist) {
+				closest_enemy_dist = dist
+				closest_enemy = enemy
+			}
+		}
+
+		if (!closest_enemy) {
+			return
+		}
+aiming_enemy = closest_enemy
+		reload_t = 0.3 + Math.random() * 1.0
+	
+			
+			if (aiming_enemy && aiming_enemy.parent) {
+				dist = distance_to(aiming_enemy)
+				if (dist == 0) return
+				aim_direction_x = (aiming_enemy.x - x) / dist
+				aim_direction_y = (aiming_enemy.y - y) / dist
+			}
+			
+			var fire_ball = new FireBall()
+			parent.addChild(fire_ball)
+			fire_ball.x = x + aim_direction_x * 30.0
+			fire_ball.y = y + aim_direction_y * 30.0
+			fire_ball.damage = attack_damage
+			fire_ball.size = 1
+			fire_ball.velocity_x = aim_direction_x * attack_speed
+			fire_ball.velocity_y = aim_direction_y * attack_speed
+			
+			scaleX = aim_direction_x < 0 ? -1 : 1
+			
+			burst_queue -= 1
+			attack_t = 0.15
+		
+	}
+	if (attack_t > 0){
+		//anim("shoot")
+		attack_t -= delta
+	}
+}]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_2" color="#9933CC" heightLiteral="32">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="npc/model" name="model">
+                  <matrix>
+                    <Matrix a="0.657241821289062" d="0.62921142578125" ty="-0.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.25"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_3" color="#FF800A" heightLiteral="32">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMGroup>
+                  <members>
+                    <DOMShape>
+                      <fills>
+                        <FillStyle index="1">
+                          <SolidColor color="#23201F" alpha="0.2"/>
+                        </FillStyle>
+                      </fills>
+                      <edges>
+                        <Edge fillStyle1="1" edges="!797 0[797 118 563 201!563 201[331 286 1 286!1 286[-330 286 -563 201!-563 201[-796 118 -796 0!-796 0[-796 -118 -563 -202!-563 -202[-330 -285 1 -285!1 -285[331 -285 563 -202!563 -202[797 -118 797 0"/>
+                      </edges>
+                    </DOMShape>
+                  </members>
+                </DOMGroup>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

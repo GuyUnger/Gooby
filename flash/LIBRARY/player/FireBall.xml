@@ -1,0 +1,368 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="player/FireBall" itemID="6435c887-0000004f" linkageExportForAS="true" linkageBaseClass="Node2D" linkageClassName="FireBall" lastModified="1681759294" lastUniqueIdentifier="4">
+  <timeline>
+    <DOMTimeline name="FireBall" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="Layer_2" color="#9933CC" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" duration="2" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[import flash.geom.Point;
+
+var t = 0.0
+
+var moving = false
+var closest_enemy
+var find_closest_enemy_t = 0.0
+
+var destroying=false
+
+function _process(delta) {
+if(destroying) return
+	if (!moving) return
+	x += velocity_x * delta
+	y += velocity_y * delta
+	
+	find_closest_enemy_t -= delta
+	if (find_closest_enemy_t <= 0) {
+		closest_enemy = null
+		var closest_distance_sq = 9999.0
+		var enemies = MovieClip(parent).enemies
+		for (var i = 0; i < enemies.length; i++) {
+			var enemy = enemies[i]
+			
+			var dx = enemy.x - x
+			var dy = enemy.y - y
+			var distance_sq = dx*dx + dy*dy
+			
+			if (distance_sq < closest_distance_sq) {
+				closest_enemy = enemy
+				closest_distance_sq = distance_sq
+			}
+		}
+		find_closest_enemy_t = Math.min(Math.sqrt(closest_distance_sq) / speed * 0.4, 0.5)
+		
+		if (closest_enemy) {
+			var hit_distance = size * 25 + closest_enemy.size * 0.5
+			if(closest_distance_sq < hit_distance*hit_distance) {
+		remove()
+				closest_enemy.hit(self, damage)
+			}
+		}
+	}
+	
+	t += delta
+	if (t > range) {
+remove()
+	}
+}
+
+function remove(){
+		destroying=true
+gotoAndStop("destroy")
+poop.rotation = Math.random() * 360
+poop.scaleX = 0.6 + size * 0.2
+poop.scaleY = poop.scaleX
+parent.setChildIndex(self, parent.numChildren-1)
+}]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="2" duration="5" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[gotoAndStop(size+3)
+moving = true
+find_closest_enemy_t=0]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="7" name="destroy" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_1" color="#00FFFF" heightLiteral="32">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMGroup>
+                  <matrix>
+                    <Matrix a="0.697769165039062" d="0.697769165039062" tx="-0.05" ty="-11.55"/>
+                  </matrix>
+                  <members>
+                    <DOMShape>
+                      <matrix>
+                        <Matrix a="0.697769165039062" d="0.697769165039062" tx="-0.05" ty="-11.55"/>
+                      </matrix>
+                      <fills>
+                        <FillStyle index="1">
+                          <SolidColor color="#FFB600" alpha="0.2"/>
+                        </FillStyle>
+                      </fills>
+                      <edges>
+                        <Edge fillStyle1="1" edges="!-235 212[-710 204 -972 -156!-972 -156[-1179 -441 -1109 -789!-1109 -789[-1022 -1234 -709 -1587!-709 -1587[-269 -2078 343 -1753!343 -1753[405 -1718 450 -1672!450 -1672[990 -1672 1092 -1091!1092 -1091[1194 -529 950 -22!950 -22[781 329 360
+ 361!360 361[-4 369 -242 200!-242 200[-240 204 -235 212"/>
+                        <Edge cubics="!450 -1672(;810,-1672 1025,-1478 1092,-1091q450 -1672Q990 -1672q1092 -1091);"/>
+                        <Edge cubics="!343 -1753(;385,-1730 420,-1703 450,-1672q343 -1753Q405 -1718q450 -1672);"/>
+                        <Edge cubics="!950 -22(;836,212 640,339 360,361q950 -22Q781 329q360 361);"/>
+                        <Edge cubics="!1092 -1091(;1162,-716 1114,-359 950,-22q1092 -1091Q1194 -529q950 -22);"/>
+                        <Edge cubics="!-1109 -789(;-1052,-1085 -917,-1352 -709,-1587q-1109 -789Q-1022 -1234q-709 -1587);"/>
+                        <Edge cubics="!-235 212(;-553,206 -798,84 -972,-156q-235 212Q-710 204q-972 -156);"/>
+                        <Edge cubics="!-242 200(;-240,204 -240,209 -235,212q-242 200Q-240 204q-235 212);"/>
+                        <Edge cubics="!-972 -156(;-1109,-344 -1157,-557 -1109,-789q-972 -156Q-1179 -441q-1109 -789);"/>
+                        <Edge cubics="!-709 -1587(;-414,-1913 -63,-1970 343,-1753q-709 -1587Q-269 -2078q343 -1753);"/>
+                        <Edge cubics="!360 361(;116,368 -83,314 -242,200q360 361Q-4 369q-242 200);"/>
+                      </edges>
+                    </DOMShape>
+                  </members>
+                </DOMGroup>
+                <DOMGroup>
+                  <members>
+                    <DOMShape>
+                      <fills>
+                        <FillStyle index="1">
+                          <SolidColor color="#FFFFFF"/>
+                        </FillStyle>
+                      </fills>
+                      <edges>
+                        <Edge fillStyle1="1" edges="
+!-69 -424[-291 -466 -333 -683!-333 -683[-352 -777 -316 -868!-316 -868[-237 -1070 -34 -1098!-34 -1098[36 -1108 97 -1073!97 -1073[122 -1058 145 -1054!145 -1054[359 -1014 363 -784!363 -784[368 -607 252 -475!252 -475[180 -394 69 -406!69 -406
+[-9 -415 -69 -424"/>
+                        <Edge cubics="!97 -1073(;114,-1063 129,-1057 145,-1054q97 -1073Q122 -1058q145 -1054);"/>
+                        <Edge cubics="!145 -1054(;288,-1028 361,-938 363,-784q145 -1054Q359 -1014q363 -784);"/>
+                        <Edge cubics="!363 -784(;366,-666 329,-563 252,-475q363 -784Q368 -607q252 -475);"/>
+                        <Edge cubics="!252 -475(;203,-421 143,-398 69,-406q252 -475Q180 -394q69 -406);"/>
+                        <Edge cubics="!-316 -868(;-263,-1003 -169,-1079 -34,-1098q-316 -868Q-237 -1070q-34 -1098);"/>
+                        <Edge cubics="!-333 -683(;-345,-745 -339,-808 -316,-868q-333 -683Q-352 -777q-316 -868);"/>
+                        <Edge cubics="!-69 -424(;-217,-452 -305,-538 -333,-683q-69 -424Q-291 -466q-333 -683);"/>
+                        <Edge cubics="!-34 -1098(;13,-1105 56,-1096 97,-1073q-34 -1098Q36 -1108q97 -1073);"/>
+                        <Edge cubics="!69 -406(;17,-411 -29,-417 -69,-424q69 -406Q-9 -415q-69 -424);"/>
+                      </edges>
+                    </DOMShape>
+                  </members>
+                </DOMGroup>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMGroup>
+                  <matrix>
+                    <Matrix a="0.677886962890625" d="0.677886962890625" tx="-0.05" ty="-12.3"/>
+                  </matrix>
+                  <members>
+                    <DOMShape>
+                      <matrix>
+                        <Matrix a="0.677886962890625" d="0.677886962890625" tx="-0.05" ty="-12.3"/>
+                      </matrix>
+                      <fills>
+                        <FillStyle index="1">
+                          <SolidColor color="#FFC000" alpha="0.2"/>
+                        </FillStyle>
+                      </fills>
+                      <edges>
+                        <Edge fillStyle1="1" edges="
+!-284 420[-861 411 -1179 -27!-1179 -27[-1430 -372 -1345 -794!-1345 -794[-1239 -1335 -859 -1763!-859 -1763[-326 -2359 418 -1965!418 -1965[492 -1922 547 -1867!547 -1867[1203 -1867 1327 -1161!1327 -1161[1451 -479 1154 137!1154 137[949 562
+ 438 601!438 601[-3 610 -293 405!-293 405[-290 411 -284 420"/>
+                        <Edge cubics="!547 -1867(;985,-1867 1245,-1631 1327,-1161q547 -1867Q1203 -1867q1327 -1161);"/>
+                        <Edge cubics="!418 -1965(;468,-1937 511,-1904 547,-1867q418 -1965Q492 -1922q547 -1867);"/>
+                        <Edge cubics="!1154 137(;1016,420 778,574 438,601q1154 137Q949 562q438 601);"/>
+                        <Edge cubics="!1327 -1161(;1411,-707 1353,-272 1154,137q1327 -1161Q1451 -479q1154 137);"/>
+                        <Edge cubics="!-1345 -794(;-1275,-1154 -1112,-1478 -859,-1763q-1345 -794Q-1239 -1335q-859 -1763);"/>
+                        <Edge cubics="!-284 420(;-670,413 -967,265 -1179,-27q-284 420Q-861 411q-1179 -27);"/>
+                        <Edge cubics="!-293 405(;-291,411 -290,416 -284,420q-293 405Q-290 411q-284 420);"/>
+                        <Edge cubics="!-1179 -27(;-1345,-255 -1403,-514 -1345,-794q-1179 -27Q-1430 -372q-1345 -794);"/>
+                        <Edge cubics="!-859 -1763(;-501,-2159 -76,-2228 418,-1965q-859 -1763Q-326 -2359q418 -1965);"/>
+                        <Edge cubics="!438 601(;143,609 -100,543 -293,405q438 601Q-3 610q-293 405);"/>
+                      </edges>
+                    </DOMShape>
+                  </members>
+                </DOMGroup>
+                <DOMGroup>
+                  <matrix>
+                    <Matrix a="0.914382934570312" d="0.914382934570312" tx="-0.05" ty="-3.3"/>
+                  </matrix>
+                  <members>
+                    <DOMShape>
+                      <matrix>
+                        <Matrix a="0.914382934570312" d="0.914382934570312" tx="-0.05" ty="-3.3"/>
+                      </matrix>
+                      <fills>
+                        <FillStyle index="1">
+                          <SolidColor color="#FFFFFF"/>
+                        </FillStyle>
+                      </fills>
+                      <edges>
+                        <Edge fillStyle1="1" edges="
+!-123 -257[-368 -260 -506 -447!-506 -447[-613 -595 -576 -776!-576 -776[-531 -1006 -368 -1189!-368 -1189[-140 -1444 178 -1276!178 -1276[209 -1257 232 -1234!232 -1234[513 -1234 566 -933!566 -933[620 -641 491 -378!491 -378[405 -196 185 -179
+!185 -179[-2 -175 -126 -263!-126 -263[-125 -260 -123 -257"/>
+                        <Edge cubics="!232 -1234(;420,-1234 531,-1133 566,-933q232 -1234Q513 -1234q566 -933);"/>
+                        <Edge cubics="!178 -1276(;199,-1264 217,-1250 232,-1234q178 -1276Q209 -1257q232 -1234);"/>
+                        <Edge cubics="!491 -378(;433,-257 331,-190 185,-179q491 -378Q405 -196q185 -179);"/>
+                        <Edge cubics="!566 -933(;602,-737 577,-552 491,-378q566 -933Q620 -641q491 -378);"/>
+                        <Edge cubics="!-576 -776(;-546,-929 -476,-1068 -368,-1189q-576 -776Q-531 -1006q-368 -1189);"/>
+                        <Edge cubics="!-123 -257(;-287,-259 -415,-323 -506,-447q-123 -257Q-368 -260q-506 -447);"/>
+                        <Edge cubics="!-126 -263(;-125,-260 -125,-258 -123,-257q-126 -263Q-125 -260q-123 -257);"/>
+                        <Edge cubics="!-506 -447(;-576,-546 -601,-655 -576,-776q-506 -447Q-613 -595q-576 -776);"/>
+                        <Edge cubics="!-368 -1189(;-215,-1359 -34,-1388 178,-1276q-368 -1189Q-140 -1444q178 -1276);"/>
+                        <Edge cubics="!185 -179(;60,-176 -44,-203 -126,-263q185 -179Q-2 -175q-126 -263);"/>
+                      </edges>
+                    </DOMShape>
+                  </members>
+                </DOMGroup>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="player/FireBallAnim" centerPoint3DY="-38">
+                  <matrix>
+                    <Matrix a="0.423843383789062" d="0.423843383789062" ty="-38"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.35"/>
+                  </transformationPoint>
+                  <color>
+                    <Color tintMultiplier="0.66" tintColor="#FF3300"/>
+                  </color>
+                </DOMSymbolInstance>
+                <DOMGroup>
+                  <matrix>
+                    <Matrix a="0.67083740234375" d="0.67083740234375" tx="-36.45" ty="-68.4"/>
+                  </matrix>
+                  <members>
+                    <DOMShape>
+                      <matrix>
+                        <Matrix a="0.67083740234375" d="0.67083740234375" tx="-36.45" ty="-68.4"/>
+                      </matrix>
+                      <fills>
+                        <FillStyle index="1">
+                          <SolidColor color="#FF6F00" alpha="0.498039215686275"/>
+                        </FillStyle>
+                      </fills>
+                      <edges>
+                        <Edge fillStyle1="1" edges="
+!1632 2060[1632 2148 1468 2210!1468 2210[1304 2272 1072 2272!1072 2272[840 2272 676 2210!676 2210[512 2148 512 2060!512 2060[512 1972 676 1910!676 1910[840 1848 1072 1848!1072 1848[1304 1848 1468 1910!1468 1910[1632 1972 1632 2060"/>
+                      </edges>
+                    </DOMShape>
+                  </members>
+                </DOMGroup>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="player/FireBallAnim" centerPoint3DY="-38">
+                  <matrix>
+                    <Matrix a="0.78179931640625" d="0.78179931640625" ty="-37.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMGroup>
+                  <matrix>
+                    <Matrix a="0.67083740234375" d="0.67083740234375" tx="-36.45" ty="-68.4"/>
+                  </matrix>
+                  <members>
+                    <DOMShape>
+                      <matrix>
+                        <Matrix a="0.67083740234375" d="0.67083740234375" tx="-36.45" ty="-68.4"/>
+                      </matrix>
+                      <fills>
+                        <FillStyle index="1">
+                          <SolidColor color="#FF6F00" alpha="0.498039215686275"/>
+                        </FillStyle>
+                      </fills>
+                      <edges>
+                        <Edge fillStyle1="1" edges="
+!1632 2060[1632 2148 1468 2210!1468 2210[1304 2272 1072 2272!1072 2272[840 2272 676 2210!676 2210[512 2148 512 2060!512 2060[512 1972 676 1910!676 1910[840 1848 1072 1848!1072 1848[1304 1848 1468 1910!1468 1910[1632 1972 1632 2060"/>
+                      </edges>
+                    </DOMShape>
+                  </members>
+                </DOMGroup>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="5" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="player/FireBallAnim" centerPoint3DY="-38">
+                  <matrix>
+                    <Matrix a="0.922637939453125" d="0.922637939453125" ty="-37.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.2"/>
+                  </transformationPoint>
+                  <color>
+                    <Color tintMultiplier="0.32" tintColor="#FFFF00"/>
+                  </color>
+                </DOMSymbolInstance>
+                <DOMGroup>
+                  <matrix>
+                    <Matrix a="0.67083740234375" d="0.67083740234375" tx="-36.45" ty="-68.4"/>
+                  </matrix>
+                  <members>
+                    <DOMShape>
+                      <matrix>
+                        <Matrix a="0.67083740234375" d="0.67083740234375" tx="-36.45" ty="-68.4"/>
+                      </matrix>
+                      <fills>
+                        <FillStyle index="1">
+                          <SolidColor color="#FF6F00" alpha="0.498039215686275"/>
+                        </FillStyle>
+                      </fills>
+                      <edges>
+                        <Edge fillStyle1="1" edges="
+!1632 2060[1632 2148 1468 2210!1468 2210[1304 2272 1072 2272!1072 2272[840 2272 676 2210!676 2210[512 2148 512 2060!512 2060[512 1972 676 1910!676 1910[840 1848 1072 1848!1072 1848[1304 1848 1468 1910!1468 1910[1632 1972 1632 2060"/>
+                      </edges>
+                    </DOMShape>
+                  </members>
+                </DOMGroup>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="6" keyMode="9728">
+              <elements>
+                <DOMGroup>
+                  <matrix>
+                    <Matrix a="0.67083740234375" d="0.67083740234375" tx="-36.45" ty="-68.4"/>
+                  </matrix>
+                  <members>
+                    <DOMShape>
+                      <matrix>
+                        <Matrix a="0.67083740234375" d="0.67083740234375" tx="-36.45" ty="-68.4"/>
+                      </matrix>
+                      <fills>
+                        <FillStyle index="1">
+                          <SolidColor color="#FF6F00" alpha="0.498039215686275"/>
+                        </FillStyle>
+                      </fills>
+                      <edges>
+                        <Edge fillStyle1="1" edges="
+!1632 2060[1632 2148 1468 2210!1468 2210[1304 2272 1072 2272!1072 2272[840 2272 676 2210!676 2210[512 2148 512 2060!512 2060[512 1972 676 1910!676 1910[840 1848 1072 1848!1072 1848[1304 1848 1468 1910!1468 1910[1632 1972 1632 2060"/>
+                      </edges>
+                    </DOMShape>
+                  </members>
+                </DOMGroup>
+                <DOMSymbolInstance libraryItemName="Symbol 18">
+                  <matrix>
+                    <Matrix ty="-37.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="7" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 18" name="poop" centerPoint3DX="1.3" centerPoint3DY="-37.15">
+                  <matrix>
+                    <Matrix ty="-37.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

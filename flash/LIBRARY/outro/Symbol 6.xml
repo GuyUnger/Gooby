@@ -1,0 +1,36 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="outro/Symbol 6" itemID="64416720-0000009c" lastModified="1682008048" lastUniqueIdentifier="1">
+  <timeline>
+    <DOMTimeline name="Symbol 6" currentFrame="45" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true" heightLiteral="32">
+          <frames>
+            <DOMFrame index="0" duration="73" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="outro/Symbol 7" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="-0.05" ty="0.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-468.9" y="838.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="73" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="outro/Symbol 7" symbolType="graphic" firstFrame="1" centerPoint3DX="302.95" centerPoint3DY="-1175.75" loop="loop">
+                  <matrix>
+                    <Matrix a="2.23875427246094" b="-0.337554931640625" c="0.337554931640625" d="2.23875427246094" tx="369.6" ty="-1302.2"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-468.9" y="838.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

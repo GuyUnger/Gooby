@@ -1,0 +1,96 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="rooms/Cave1" itemID="64388c3c-0000003b" linkageExportForAS="true" linkageBaseClass="Room" linkageClassName="Cave1" lastModified="1682009705" lastUniqueIdentifier="1">
+  <timeline>
+    <DOMTimeline name="Cave1" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="Layer_4" color="#FF4FFF">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 32">
+                  <matrix>
+                    <Matrix tx="628.2" ty="282.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_2" color="#9933CC" outline="true" useOutlineView="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="rooms/Cave1Walls" name="walls">
+                  <matrix>
+                    <Matrix tx="539.55" ty="397.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true" heightLiteral="32">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="player/Player" name="player" selected="true">
+                  <matrix>
+                    <Matrix tx="-44.95" ty="478.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Warp" name="c" centerPoint3DX="516.25" centerPoint3DY="-202.55">
+                  <matrix>
+                    <Matrix a="6.103515625e-05" b="-0.999984741210938" c="8.58122253417969" d="0" tx="516.2" ty="-202.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.2" y="0.3"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Warp" name="d">
+                  <matrix>
+                    <Matrix a="0.118789672851562" b="-0.712295532226562" c="1.01795959472656" d="0.169754028320312" tx="1095.9" ty="76.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.1" y="0.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="AnimationTrigger2">
+                  <matrix>
+                    <Matrix a="3.08047485351562" d="3.68064880371094" tx="1072.6" ty="158.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.1" y="0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_3" color="#FF800A">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 11" name="fl" cacheAsBitmap="true">
+                  <matrix>
+                    <Matrix tx="549.95" ty="52"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,37 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 82" itemID="6441d5e2-000006d0" lastModified="1682036474">
+  <timeline>
+    <DOMTimeline name="Symbol 82" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="Layer_2" color="#9933CC" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" duration="2" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop()]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="2" duration="7" name="step1" labelType="name" keyMode="9728" soundEffect="custom" soundName="pop mouth 1.mp3" outPoint44="5760" soundZoomLevel="2">
+              <SoundEnvelope>
+                <SoundEnvelopePoint level0="18010" level1="17009"/>
+              </SoundEnvelope>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="9" duration="5" name="step2" labelType="name" keyMode="9728" soundEffect="custom" soundName="pop mouth 2.mp3" outPoint44="5760" soundZoomLevel="2">
+              <SoundEnvelope>
+                <SoundEnvelopePoint level0="18010" level1="17510"/>
+              </SoundEnvelope>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_1" color="#00FFFF" heightLiteral="32">
+          <frames>
+            <DOMFrame index="0" duration="14" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,135 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="outro/Symbol 4" itemID="644164e6-0000004a" lastModified="1682007432">
+  <timeline>
+    <DOMTimeline name="Symbol 4" currentFrame="104" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true" heightLiteral="32">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="outro/Symbol 3" centerPoint3DX="-471.25" centerPoint3DY="-218.4">
+                  <matrix>
+                    <Matrix tx="-434.15" ty="19.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="outro/Symbol 3" centerPoint3DX="-463.45" centerPoint3DY="-218.4">
+                  <matrix>
+                    <Matrix tx="-426.35" ty="19.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="outro/Symbol 3" centerPoint3DX="-471.25" centerPoint3DY="-218.4">
+                  <matrix>
+                    <Matrix tx="-434.15" ty="19.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="3" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="outro/Symbol 3" selected="true" centerPoint3DX="-463.45" centerPoint3DY="-218.4">
+                  <matrix>
+                    <Matrix tx="-426.35" ty="19.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="outro/Symbol 3" centerPoint3DX="-471.25" centerPoint3DY="-218.4">
+                  <matrix>
+                    <Matrix tx="-434.15" ty="19.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="5" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="outro/Symbol 3" selected="true" centerPoint3DX="-463.45" centerPoint3DY="-218.4">
+                  <matrix>
+                    <Matrix tx="-426.35" ty="19.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="6" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="outro/Symbol 3" centerPoint3DX="-471.25" centerPoint3DY="-218.4">
+                  <matrix>
+                    <Matrix tx="-434.15" ty="19.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="7" duration="8" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="outro/Symbol 3" selected="true" centerPoint3DX="-463.45" centerPoint3DY="-218.4">
+                  <matrix>
+                    <Matrix tx="-426.35" ty="19.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="15" duration="99" tweenType="motion" motionTweenSnap="true" keyMode="22017" acceleration="84">
+              <tweens>
+                <Ease target="all" intensity="84"/>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="outro/Symbol 3" selected="true" centerPoint3DX="-463.45" centerPoint3DY="-218.4">
+                  <matrix>
+                    <Matrix tx="-426.35" ty="19.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="114" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="outro/Symbol 3" selected="true" centerPoint3DX="-666.3" centerPoint3DY="44.25">
+                  <matrix>
+                    <Matrix a="0.05328369140625" b="-0.998565673828125" c="0.998565673828125" d="0.05328369140625" tx="-426.35" ty="19.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05" y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

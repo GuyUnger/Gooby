@@ -1,0 +1,54 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 38" itemID="643f42dc-00000145" lastModified="1681867728">
+  <timeline>
+    <DOMTimeline name="Symbol 38" currentFrame="55" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true" heightLiteral="32">
+          <frames>
+            <DOMFrame index="0" duration="27" tweenType="motion" motionTweenSnap="true" keyMode="22017" acceleration="-100">
+              <tweens>
+                <Ease target="all" intensity="-100"/>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 39" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix ty="-42.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-14.5" y="12.65"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="27" duration="28" tweenType="motion" motionTweenSnap="true" keyMode="22017" acceleration="100">
+              <tweens>
+                <Ease target="all" intensity="100"/>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 39" symbolType="graphic" firstFrame="27" centerPoint3DX="-14.5" centerPoint3DY="-183.4" loop="loop">
+                  <matrix>
+                    <Matrix ty="-195.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-14.5" y="12.65"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="55" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 39" symbolType="graphic" centerPoint3DX="-14.5" centerPoint3DY="546.05" loop="loop">
+                  <matrix>
+                    <Matrix ty="533.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-14.5" y="12.65"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

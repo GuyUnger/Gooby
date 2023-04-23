@@ -1,0 +1,841 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 34" itemID="643f3474-000000c5" linkageExportForAS="true" linkageBaseClass="Cutscene" linkageClassName="Symbol34" lastModified="1682047822" lastUniqueIdentifier="4">
+  <timeline>
+    <DOMTimeline name="Symbol 34" currentFrame="37" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="Layer_4" color="#FF4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" duration="35" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[play()]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="35" duration="2" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop()]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="37" duration="3" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[wait(0.5)
+
+Game.main.stop_music()
+
+new DunDun().play()]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="40" duration="10" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[Game.player.visible=false]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="50" duration="11" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[wait(0.5)]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="61" duration="57" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="118" duration="2" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[start_dialog("vincent3")]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="120" duration="11" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[MovieClip(Game.room.parent).trans.play()]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="131" duration="2" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[MovieClip(parent.parent).gotoAndStop("f1")]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="133" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[prevFrame()]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_5" color="#009999">
+          <frames>
+            <DOMFrame index="0" duration="61" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="61" duration="55" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 38" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="51.9" ty="-101.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="116" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 38" symbolType="graphic" firstFrame="55" centerPoint3DX="397.75" centerPoint3DY="-144.8" loop="loop">
+                  <matrix>
+                    <Matrix tx="397.75" ty="-101.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-14.5" y="-30.25"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="117" duration="17" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_3" color="#FF800A">
+          <frames>
+            <DOMFrame index="0" duration="35" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="brother" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.290374755859375" d="0.290374755859375" tx="-56.8" ty="-75.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.15" y="8.95"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="35" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="brother" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.290374755859375" d="0.290374755859375" tx="60.9" ty="-75.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.15" y="8.95"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="37" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="player/shadow" centerPoint3DX="60.8" centerPoint3DY="-31.6">
+                  <matrix>
+                    <Matrix a="0.596160888671875" d="0.596160888671875" tx="60.8" ty="-31.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="0.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 27" centerPoint3DX="62" centerPoint3DY="-56.25">
+                  <matrix>
+                    <Matrix a="0.290374755859375" d="0.290374755859375" tx="61.95" ty="-56.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 26" centerPoint3DX="60.8" centerPoint3DY="-89.9">
+                  <matrix>
+                    <Matrix a="0.290374755859375" d="0.290374755859375" tx="60.8" ty="-89.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="38" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="player/shadow" centerPoint3DX="60.8" centerPoint3DY="-31.6">
+                  <matrix>
+                    <Matrix a="0.596160888671875" d="0.596160888671875" tx="60.8" ty="-31.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="0.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 27" centerPoint3DX="62" centerPoint3DY="-56.25">
+                  <matrix>
+                    <Matrix a="0.290374755859375" c="0.002685546875" d="0.288818359375" tx="61.65" ty="-56.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.15" y="-0.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 26" centerPoint3DX="54.25" centerPoint3DY="-83.3">
+                  <matrix>
+                    <Matrix a="0.288360595703125" b="-0.0340728759765625" c="0.0340728759765625" d="0.288360595703125" tx="54.2" ty="-83.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.2" y="-0.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="40" duration="4" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="player/shadow" selected="true" centerPoint3DX="60.9" centerPoint3DY="-31.95">
+                  <matrix>
+                    <Matrix a="-0.556686401367188" d="0.6268310546875" tx="60.85" ty="-31.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.1" y="0.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 27" selected="true" centerPoint3DX="59.8" centerPoint3DY="-57.95">
+                  <matrix>
+                    <Matrix a="-0.271148681640625" d="0.305313110351562" tx="59.8" ty="-57.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 26" selected="true" centerPoint3DX="60.9" centerPoint3DY="-93.3">
+                  <matrix>
+                    <Matrix a="-0.271148681640625" d="0.305313110351562" tx="60.9" ty="-93.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMGroup>
+                  <matrix>
+                    <Matrix a="0.933837890625" d="1.051513671875" tx="4.05" ty="1.1"/>
+                  </matrix>
+                  <members>
+                    <DOMSymbolInstance libraryItemName="player/Leg" symbolType="graphic" loop="single frame">
+                      <matrix>
+                        <Matrix a="0.0149688720703125" b="-0.277145385742188" c="0.246139526367188" d="0.016845703125" tx="80.25" ty="-113.75"/>
+                      </matrix>
+                      <transformationPoint>
+                        <Point x="1.7" y="1.1"/>
+                      </transformationPoint>
+                    </DOMSymbolInstance>
+                    <DOMSymbolInstance libraryItemName="player/Leg" symbolType="graphic" loop="single frame">
+                      <matrix>
+                        <Matrix a="0.0149688720703125" b="-0.277145385742188" c="0.246139526367188" d="0.016845703125" tx="81.65" ty="-143.75"/>
+                      </matrix>
+                      <transformationPoint>
+                        <Point x="1.55" y="1.55"/>
+                      </transformationPoint>
+                    </DOMSymbolInstance>
+                    <DOMSymbolInstance libraryItemName="player/Body" symbolType="graphic" centerPoint3DX="3.7" centerPoint3DY="-134.4" loop="single frame">
+                      <matrix>
+                        <Matrix a="0.0149688720703125" b="-0.277145385742188" c="0.246139526367188" d="0.016845703125" tx="69.3" ty="-129.65"/>
+                      </matrix>
+                      <transformationPoint>
+                        <Point x="1.65" y="0.1"/>
+                      </transformationPoint>
+                    </DOMSymbolInstance>
+                    <DOMSymbolInstance libraryItemName="player/PlayerHead" symbolType="graphic" loop="single frame">
+                      <matrix>
+                        <Matrix a="0.0097198486328125" b="-0.277435302734375" c="0.246414184570312" d="0.0109405517578125" tx="74.85" ty="-140.85"/>
+                      </matrix>
+                      <transformationPoint>
+                        <Point x="2.25" y="-80.25"/>
+                      </transformationPoint>
+                    </DOMSymbolInstance>
+                  </members>
+                </DOMGroup>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="44" duration="4" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="player/shadow" centerPoint3DX="60.9" centerPoint3DY="-31.2">
+                  <matrix>
+                    <Matrix a="-0.654556274414062" d="0.572219848632812" tx="60.85" ty="-31.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 27" centerPoint3DX="59.6" centerPoint3DY="-54.85">
+                  <matrix>
+                    <Matrix a="-0.318817138671875" d="0.278717041015625" tx="59.6" ty="-54.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 26" centerPoint3DX="60.9" centerPoint3DY="-87.15">
+                  <matrix>
+                    <Matrix a="-0.318817138671875" d="0.278717041015625" tx="60.9" ty="-87.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.2"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMGroup>
+                  <matrix>
+                    <Matrix a="1.09796142578125" d="0.959930419921875" tx="-5.95" ty="-0.9"/>
+                  </matrix>
+                  <members>
+                    <DOMSymbolInstance libraryItemName="player/Leg" symbolType="graphic" centerPoint3DX="91.05" centerPoint3DY="-109.4" loop="single frame">
+                      <matrix>
+                        <Matrix a="0.0175933837890625" b="-0.253005981445312" c="0.289413452148438" d="0.0153656005859375" tx="83.2" ty="-106.3"/>
+                      </matrix>
+                      <transformationPoint>
+                        <Point x="2.25" y="1.4"/>
+                      </transformationPoint>
+                    </DOMSymbolInstance>
+                    <DOMSymbolInstance libraryItemName="player/Leg" symbolType="graphic" centerPoint3DX="93.1" centerPoint3DY="-136.85" loop="single frame">
+                      <matrix>
+                        <Matrix a="0.0175933837890625" b="-0.253005981445312" c="0.289413452148438" d="0.0153656005859375" tx="85.1" ty="-133.8"/>
+                      </matrix>
+                      <transformationPoint>
+                        <Point x="1.65" y="1.1"/>
+                      </transformationPoint>
+                    </DOMSymbolInstance>
+                    <DOMSymbolInstance libraryItemName="player/Body" symbolType="graphic" centerPoint3DX="-6.7" centerPoint3DY="-124.95" loop="single frame">
+                      <matrix>
+                        <Matrix a="0.0175933837890625" b="-0.253005981445312" c="0.289413452148438" d="0.0153656005859375" tx="70.35" ty="-120.65"/>
+                      </matrix>
+                      <transformationPoint>
+                        <Point x="2.65" y="1.2"/>
+                      </transformationPoint>
+                    </DOMSymbolInstance>
+                    <DOMSymbolInstance libraryItemName="player/PlayerHead" symbolType="graphic" centerPoint3DX="53.5" centerPoint3DY="-132.05" loop="single frame">
+                      <matrix>
+                        <Matrix a="0.0114288330078125" b="-0.253265380859375" c="0.289718627929688" d="0.009979248046875" tx="77" ty="-131.15"/>
+                      </matrix>
+                      <transformationPoint>
+                        <Point x="0.55" y="-81.15"/>
+                      </transformationPoint>
+                    </DOMSymbolInstance>
+                  </members>
+                </DOMGroup>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="48" duration="3" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="player/shadow" centerPoint3DX="60.9" centerPoint3DY="-31.6">
+                  <matrix>
+                    <Matrix a="-0.596160888671875" d="0.596160888671875" tx="60.85" ty="-31.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.1" y="0.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 27" centerPoint3DX="59.7" centerPoint3DY="-56.25">
+                  <matrix>
+                    <Matrix a="-0.290374755859375" d="0.290374755859375" tx="59.7" ty="-56.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 26" centerPoint3DX="60.9" centerPoint3DY="-89.9">
+                  <matrix>
+                    <Matrix a="-0.290374755859375" d="0.290374755859375" tx="60.9" ty="-89.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMGroup>
+                  <members>
+                    <DOMSymbolInstance libraryItemName="player/Leg" symbolType="graphic" centerPoint3DX="88.45" centerPoint3DY="-112.95" loop="single frame">
+                      <matrix>
+                        <Matrix a="0.0161285400390625" b="-0.263717651367188" c="0.263717651367188" d="0.0161285400390625" tx="81.6" ty="-109.95"/>
+                      </matrix>
+                      <transformationPoint>
+                        <Point x="0.2"/>
+                      </transformationPoint>
+                    </DOMSymbolInstance>
+                    <DOMSymbolInstance libraryItemName="player/Leg" symbolType="graphic" centerPoint3DX="90.2" centerPoint3DY="-141.45" loop="single frame">
+                      <matrix>
+                        <Matrix a="0.0161285400390625" b="-0.263717651367188" c="0.263717651367188" d="0.0161285400390625" tx="83.35" ty="-138.45"/>
+                      </matrix>
+                      <transformationPoint>
+                        <Point x="0.2" y="-0.2"/>
+                      </transformationPoint>
+                    </DOMSymbolInstance>
+                    <DOMSymbolInstance libraryItemName="player/Body" symbolType="graphic" centerPoint3DX="-0.7" centerPoint3DY="-129.2" loop="single frame">
+                      <matrix>
+                        <Matrix a="0.0161285400390625" b="-0.263717651367188" c="0.263717651367188" d="0.0161285400390625" tx="69.9" ty="-125.05"/>
+                      </matrix>
+                      <transformationPoint>
+                        <Point x="0.2" y="-0.2"/>
+                      </transformationPoint>
+                    </DOMSymbolInstance>
+                    <DOMSymbolInstance libraryItemName="player/PlayerHead" symbolType="graphic" centerPoint3DX="54.3" centerPoint3DY="-136.55" loop="single frame">
+                      <matrix>
+                        <Matrix a="0.0105133056640625" b="-0.263992309570312" c="0.263992309570312" d="0.0105133056640625" tx="75.85" ty="-135.7"/>
+                      </matrix>
+                      <transformationPoint>
+                        <Point x="0.15" y="-81.45"/>
+                      </transformationPoint>
+                    </DOMSymbolInstance>
+                  </members>
+                </DOMGroup>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="51" duration="10" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="player/shadow" centerPoint3DX="60.9" centerPoint3DY="-30.7">
+                  <matrix>
+                    <Matrix a="-0.683380126953125" d="0.541519165039062" tx="60.85" ty="-30.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 27" centerPoint3DX="59.55" centerPoint3DY="-53.1">
+                  <matrix>
+                    <Matrix a="-0.332855224609375" d="0.263763427734375" tx="59.55" ty="-53.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 26" centerPoint3DX="60.9" centerPoint3DY="-83.65">
+                  <matrix>
+                    <Matrix a="-0.332855224609375" d="0.263763427734375" tx="60.9" ty="-83.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.2"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMGroup>
+                  <matrix>
+                    <Matrix a="1.14631652832031" d="0.908401489257812" tx="-8.9" ty="-2.05"/>
+                  </matrix>
+                  <members>
+                    <DOMSymbolInstance libraryItemName="player/Leg" symbolType="graphic" centerPoint3DX="92.5" centerPoint3DY="-104.7" loop="single frame">
+                      <matrix>
+                        <Matrix a="0.01837158203125" b="-0.239425659179688" c="0.302154541015625" d="0.0145416259765625" tx="84.25" ty="-101.65"/>
+                      </matrix>
+                      <transformationPoint>
+                        <Point x="1.75" y="1.2"/>
+                      </transformationPoint>
+                    </DOMSymbolInstance>
+                    <DOMSymbolInstance libraryItemName="player/Leg" symbolType="graphic" centerPoint3DX="94.5" centerPoint3DY="-130.6" loop="single frame">
+                      <matrix>
+                        <Matrix a="0.01837158203125" b="-0.239425659179688" c="0.302154541015625" d="0.0145416259765625" tx="86.2" ty="-127.5"/>
+                      </matrix>
+                      <transformationPoint>
+                        <Point x="1.75" y="1.2"/>
+                      </transformationPoint>
+                    </DOMSymbolInstance>
+                    <DOMSymbolInstance libraryItemName="player/Body" symbolType="graphic" centerPoint3DX="-9.7" centerPoint3DY="-119.45" loop="single frame">
+                      <matrix>
+                        <Matrix a="0.01837158203125" b="-0.239425659179688" c="0.302154541015625" d="0.0145416259765625" tx="70.8" ty="-115.55"/>
+                      </matrix>
+                      <transformationPoint>
+                        <Point x="0.9" y="0.75"/>
+                      </transformationPoint>
+                    </DOMSymbolInstance>
+                    <DOMSymbolInstance libraryItemName="player/PlayerHead" symbolType="graphic" centerPoint3DX="53.35" centerPoint3DY="-126.15" loop="single frame">
+                      <matrix>
+                        <Matrix a="0.011932373046875" b="-0.239639282226562" c="0.30242919921875" d="0.009429931640625" tx="77.6" ty="-125"/>
+                      </matrix>
+                      <transformationPoint>
+                        <Point x="2.05" y="-80.1"/>
+                      </transformationPoint>
+                    </DOMSymbolInstance>
+                  </members>
+                </DOMGroup>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="61" duration="4" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="player/shadow" selected="true" centerPoint3DX="61.55" centerPoint3DY="-32.45">
+                  <matrix>
+                    <Matrix a="-0.596160888671875" c="-0.045379638671875" d="0.657058715820312" tx="61.55" ty="-32.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="0.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 27" selected="true" centerPoint3DX="62.25" centerPoint3DY="-59.65">
+                  <matrix>
+                    <Matrix a="-0.290374755859375" c="-0.0221099853515625" d="0.320037841796875" tx="62.25" ty="-59.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 26" selected="true" centerPoint3DX="66" centerPoint3DY="-96.7">
+                  <matrix>
+                    <Matrix a="-0.290374755859375" c="-0.0221099853515625" d="0.320037841796875" tx="66" ty="-96.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="65" duration="6" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="player/shadow" selected="true" centerPoint3DX="60.65" centerPoint3DY="-30.95">
+                  <matrix>
+                    <Matrix a="-0.634857177734375" c="0.0151214599609375" d="0.55816650390625" tx="60.6" ty="-30.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.1" y="0.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 27" selected="true" centerPoint3DX="58.8" centerPoint3DY="-54.05">
+                  <matrix>
+                    <Matrix a="-0.309219360351562" c="0.0073699951171875" d="0.271865844726562" tx="58.75" ty="-54.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 26" selected="true" centerPoint3DX="59.2" centerPoint3DY="-85.55">
+                  <matrix>
+                    <Matrix a="-0.309219360351562" c="0.0073699951171875" d="0.271865844726562" tx="59.15" ty="-85.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.15" y="-0.2"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="71" duration="47" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="brother" symbolType="graphic" loop="single frame">
+                  <matrix>
+                    <Matrix a="-0.290374755859375" d="0.290374755859375" tx="60.9" ty="-75.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.15" y="8.95"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="118" duration="16" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="brother" centerPoint3DX="60.9" centerPoint3DY="-72.7">
+                  <matrix>
+                    <Matrix a="-0.290374755859375" d="0.290374755859375" tx="60.9" ty="-75.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.15" y="8.95"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_1" color="#00FFFF" heightLiteral="32">
+          <frames>
+            <DOMFrame index="0" duration="134" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#724C65"/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor color="#995974"/>
+                    </FillStyle>
+                    <FillStyle index="3">
+                      <LinearGradient>
+                        <matrix>
+                          <Matrix a="0.0308685302734375" b="0.115264892578125" c="-0.0853271484375" d="0.022857666015625" tx="97.65" ty="-220.05"/>
+                        </matrix>
+                        <GradientEntry color="#4F3E51" ratio="0"/>
+                        <GradientEntry color="#995974" ratio="1"/>
+                      </LinearGradient>
+                    </FillStyle>
+                    <FillStyle index="4">
+                      <SolidColor color="#BB658A"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" fillStyle1="4" edges="!2506 5924.5[#9CB.0A #171E.C2 2508 5913!2508 5913[2533 5767 2534 5735!2534 5735[2535 5690 2520 5572!2520 5572[2507 5469 2515 5409!2515 5409|2581 5403!2581 5403[2591 5244 2601 5153!2601 5153[2618 5015 2648 4906!2648 4906[2667 4846 2674
+ 4816!2674 4816[#A77.43 #12BC.13 2682.5 4778!2682.5 4778[#A3D.6E #1274.03 2552 4608!2552 4608[2397 4359 2261 4085!2261 4085[2207 3978 2189 3946!2189 3946[2145 3869 2099 3818!2099 3818[2072 3789 2017 3740!2017 3740[1959 3688 1934 3662
+!1934 3662[1892 3618 1850 3554!1850 3554[1823 3515 1778 3437!1778 3437[1629 3177 1520 2955!1520 2955[1469 2851 1442 2781!1442 2781[1405 2684 1391 2599!1391 2599[1379 2521 1381 2362!1381 2362|1383 2182!1383 2182[1383 2140 1397 2124!1397
+ 2124[1414 2104 1462 2102!1462 2102[#5D0.C1 #834.22 1511 2101!1511 2101[#5FA.ED #761.6B 1634 1641!1634 1641[1674 1542 1762 1358!1762 1358[1854 1167 1892 1075!1892 1075[1950 935 2036 676!2036 676[2129 393 2175 275!2175 275[2361 -198 2639
+ -426!2639 -426[2669 -450 2682 -465!2682 -465[2703 -490 2706 -516!2706 -516[2709 -551 2674 -589!2674 -589[2629 -630 2609 -652!2609 -652[2532 -738 2561 -909!2561 -909[2594 -1119 2724 -1290!2724 -1290[#ABE.1A #FFFAD4.C7 2760 -1337!2760
+ -1337|2428 -1981!2428 -1981[2388 -2058 2370 -2102!2370 -2102[2343 -2170 2336 -2229!2336 -2229[2325 -2313 2353 -2394!2353 -2394[2217 -2519 2094 -2737!2094 -2737[2022 -2864 1893 -3126!1893 -3126[1803 -3296 1433 -3871!1433 -3871[1139 -4327
+ 1019 -4639!1019 -4639[982 -4734 907 -4979!907 -4979|877.5 -5077"/>
+                    <Edge fillStyle0="4" fillStyle1="3" edges="
+!2473.5 -2289.5[#98B.BE #FFF6D7.3D 2410 -2399!2410 -2399[1951 -3137 1524 -3890!1524 -3890|887.5 -5058.5!887.5 -5058.5[#372.3E #FFEC33.87 877 -5078.5!877 -5078.5|877.5 -5077"/>
+                    <Edge fillStyle0="3" fillStyle1="1" edges="
+!432 -5952[450 -5917 468 -5882!468 -5882[485 -5847 502 -5812!502 -5812[519 -5777 537 -5742!537 -5742[572 -5673 607 -5602!607 -5602[624 -5569 642 -5534!642 -5534[#2F6.31 #FFEB47.11 877.5 -5077"/>
+                    <Edge fillStyle1="4" edges="
+!2473.5 -2289.5[#9DC.C9 #FFF762.3B 2570 -2128!2570 -2128[#B78.CF -1498.875 2911.5 -1263!2911.5 -1263[#B5F.19 #FFFB15.4C 2910.5 -1254.5!2910.5 -1254.5[#B5D.AD #FFFB1F.64 2908.5 -1243"/>
+                    <Edge fillStyle0="2" fillStyle1="4" edges="
+!2908.5 -1243[#B52.26 #FFFB5B.0E 2863.5 -1159!2863.5 -1159[#A69.D5 -988.09375 2654 -859!2654 -859[2662 -852 2671 -845!2671 -845[2679 -837 2690 -831!2690 -831[2701 -823 2713 -816!2713 -816[2713.5 #FFFCD0.47 2714 -815.5!2714 -815.5[#AAB.87
+ #FFFCDA.47 2750 -796!2750 -796[2754 -793 2757 -788!2757 -788[#AE9.97 #FFFD21.FD 2814.5 -679.5"/>
+                    <Edge fillStyle1="4" edges="
+!2814.5 -679.5[#B28.1D #FFFDC6.04 2833 -459!2833 -459[#B10.53 #FFFE38.DD 2831.5 -451.5"/>
+                    <Edge fillStyle0="2" fillStyle1="4" edges="
+!2831.5 -451.5[#AF7.47 #FFFEA5.9D 2725 -240!2725 -240[#A9F.7C #FFFF17.27 2714 -225.5!2714 -225.5[#8C6.C3 #180.71 1971 1103!1971 1103[#6AC.7A #6FC.F4 1534.5 2505!1534.5 2505[#5F3.92 #9F5.F2 1513 2595!1513 2595[1506 2624 1526 2651!1526
+ 2651[#6C5.F9 #B7C.06 1938 3232.5!1938 3232.5[#87B.0F #DEE.42 2399 3904.5"/>
+                    <Edge fillStyle1="2" edges="
+!2908.5 -1243|2814.5 -679.5"/>
+                    <Edge fillStyle1="3" edges="
+!432 -5952|3327 -7148!3327 -7148|2473.5 -2289.5"/>
+                    <Edge fillStyle1="4" edges="
+!2399 3904.5[#9AC.3 #FB3.8D 2553 4135!2553 4135[2750 4432 2810 4770!2810 4770[#AFF.D2 #12C3.F5 2814.5 4837!2814.5 4837[#AFE.54 #12E8.82 2814 4844!2814 4844|2813.5 4850"/>
+                    <Edge fillStyle0="2" fillStyle1="4" edges="
+!2813.5 4850[#AFA.FB #130E.4A 2803 4906!2803 4906[2688 5308 2637 5722!2637 5722[2628 5798 2572 5857!2572 5857[#9EB.1F #1702.E8 2506 5924.5"/>
+                    <Edge fillStyle0="2" fillStyle1="1" edges="
+!2506 5924.5[#787.56 #1970.FC 1286 7020!1286 7020[1247 7051 1195 7033!1195 7033|1220 6940!1220 6940|944 6940"/>
+                    <Edge fillStyle1="2" edges="
+!2813.5 4850|2532 9508!2532 9508|944 9508!944 9508|944 6940!2831.5 -451.5|2399 3904.5"/>
+                    <Edge fillStyle1="1" edges="
+!944 6940|-15369 6952!-15369 6952|-15369 -5858!-15369 -5858|-15511 -5870!-15511 -5870|-15511 -5970!-15511 -5970|432 -5952"/>
+                    <Edge cubics="!1195 7033(;1195,7033 1220,6940 1220,6940q1195 7033 1220 6940);"/>
+                    <Edge cubics="!-15369 -5858(;-15369,-5858 -15511,-5870 -15511,-5870q-15369 -5858 -15511 -5870);"/>
+                    <Edge cubics="!-15511 -5870(;-15511,-5870 -15511,-5970 -15511,-5970q-15511 -5870 -15511 -5970);"/>
+                    <Edge cubics="!-15369 6952(;-15369,6952 -15369,-5858 -15369,-5858q-15369 6952 -15369 -5858);"/>
+                    <Edge cubics="!-15511 -5970(;-15511,-5970 432,-5952 432,-5952q-15511 -5970 432 -5952);"/>
+                    <Edge cubics="!1220 6940(;1220,6940 944,6940 944,6940q1220 6940 944 6940);"/>
+                    <Edge cubics="!944 6940(;944,6940 -15369,6952 -15369,6952q944 6940 -15369 6952);"/>
+                    <Edge cubics="!468 -5882(;479,-5859 491,-5835 502,-5812q468 -5882Q485 -5847q502 -5812);"/>
+                    <Edge cubics="!502 -5812(;513,-5789 525,-5765 537,-5742q502 -5812Q519 -5777q537 -5742);"/>
+                    <Edge cubics="!537 -5742(;560,-5696 584,-5649 607,-5602q537 -5742Q572 -5673q607 -5602);"/>
+                    <Edge cubics="!607 -5602(;618,-5580 630,-5557 642,-5534q607 -5602Q624 -5569q642 -5534);"/>
+                    <Edge cubics="!432 -5952(;444,-5929 456,-5905 468,-5882q432 -5952Q450 -5917q468 -5882);"/>
+                    <Edge cubics="!2654 -859(;2659,-854 2665,-850 2671,-845q2654 -859Q2662 -852q2671 -845);"/>
+                    <Edge cubics="!2671 -845(;2676,-840 2683,-835 2690,-831q2671 -845Q2679 -837q2690 -831);"/>
+                    <Edge cubics="!2690 -831(;2697,-826 2705,-821 2713,-816q2690 -831Q2701 -823q2713 -816);"/>
+                    <Edge cubics="!2750 -796(;2753,-794 2755,-791 2757,-788q2750 -796Q2754 -793q2757 -788);"/>
+                    <Edge cubics="!2832 -451(;2814,-380 2779,-310 2725,-240q2832 -451Q2807 -346q2725 -240);"/>
+                    <Edge cubics="!1524 -3890(;1809,-3388 2104,-2891 2410,-2399q1524 -3890Q1951 -3137q2410 -2399);"/>
+                    <Edge cubics="!2410 -2399(;2434,-2361 2456,-2323 2474,-2289q2410 -2399 2474 -2289);"/>
+                    <Edge cubics="!642 -5534(;720,-5380 800,-5226 878,-5077q642 -5534 878 -5077);"/>
+                    <Edge cubics="!1513 2595(;1508,2614 1513,2633 1526,2651q1513 2595Q1506 2624q1526 2651);"/>
+                    <Edge cubics="!1971 1103(;1796,1561 1650,2028 1535,2505q1971 1103Q1708 1789q1535 2505);"/>
+                    <Edge cubics="!1535 2505(;1527,2535 1520,2565 1513,2595q1535 2505 1513 2595);"/>
+                    <Edge cubics="!2553 4135(;2684,4333 2770,4545 2810,4770q2553 4135Q2750 4432q2810 4770);"/>
+                    <Edge cubics="!2637 5722(;2631,5773 2609,5818 2572,5857q2637 5722Q2628 5798q2572 5857);"/>
+                    <Edge cubics="!2803 4906(;2726,5174 2671,5446 2637,5722q2803 4906Q2688 5308q2637 5722);"/>
+                    <Edge cubics="!1286 7020(;1260,7041 1230,7045 1195,7033q1286 7020Q1247 7051q1195 7033);"/>
+                    <Edge cubics="!2572 5857(;2550,5880 2528,5903 2506,5925q2572 5857 2506 5925);"/>
+                    <Edge cubics="!2506 5925(;2120,6317 1713,6683 1286,7020q2506 5925Q1927 6513q1286 7020);"/>
+                    <Edge cubics="!1526 2651(;1666,2845 1804,3040 1938,3233q1526 2651 1938 3233);"/>
+                    <Edge cubics="!1938 3233(;2095,3457 2248,3681 2399,3905q1938 3233 2399 3905);"/>
+                    <Edge cubics="!2399 3905(;2451,3983 2502,4059 2553,4135q2399 3905 2553 4135);"/>
+                    <Edge cubics="!2810 4770(;2814,4793 2816,4815 2815,4837q2810 4770Q2816 4804q2815 4837);"/>
+                    <Edge cubics="!944 9508(;944,9508 944,6940 944,6940q944 9508 944 6940);"/>
+                    <Edge cubics="!2714 -815(;2726,-809 2738,-803 2750,-796q2714 -815Q2732 -806q2750 -796);"/>
+                    <Edge cubics="!2713 -816(;2714,-816 2714,-816 2714,-815q2713 -816Q2714 -816q2714 -815);"/>
+                    <Edge cubics="!2833 -459(;2832,-456 2832,-454 2832,-451q2833 -459Q2832 -455q2832 -451);"/>
+                    <Edge cubics="!2725 -240(;2721,-235 2717,-230 2714,-225q2725 -240Q2719 -233q2714 -225);"/>
+                    <Edge cubics="!2814 4844(;2814,4844 2814,4850 2814,4850q2814 4844 2814 4850);"/>
+                    <Edge cubics="!2814 4850(;2812,4869 2808,4887 2803,4906q2814 4850Q2811 4878q2803 4906);"/>
+                    <Edge cubics="!2815 4837(;2814,4840 2814,4842 2814,4844q2815 4837Q2814 4841q2814 4844);"/>
+                    <Edge cubics="!2532 9508(;2532,9508 944,9508 944,9508q2532 9508 944 9508);"/>
+                    <Edge cubics="!2814 4850(;2814,4850 2532,9508 2532,9508q2814 4850 2532 9508);"/>
+                    <Edge cubics="!2832 -451(;2832,-451 2399,3905 2399,3905q2832 -451 2399 3905);"/>
+                    <Edge cubics="!2714 -225(;2403,181 2155,624 1971,1103q2714 -225Q2247 384q1971 1103);"/>
+                    <Edge cubics="!3327 -7148(;3327,-7148 2474,-2289 2474,-2289q3327 -7148 2474 -2289);"/>
+                    <Edge cubics="!3327 -7148(;3327,-7148 432,-5952 432,-5952q3327 -7148 432 -5952);"/>
+                    <Edge cubics="!2864 -1159(;2732,-1045 2662,-945 2654,-859q2864 -1159Q2666 -988q2654 -859);"/>
+                    <Edge cubics="!2912 -1263(;2911,-1260 2911,-1257 2911,-1254q2912 -1263Q2911 -1259q2911 -1254);"/>
+                    <Edge cubics="!2909 -1243(;2902,-1207 2887,-1179 2864,-1159q2909 -1243Q2898 -1189q2864 -1159);"/>
+                    <Edge cubics="!2911 -1254(;2910,-1251 2910,-1247 2909,-1243q2911 -1254Q2910 -1249q2909 -1243);"/>
+                    <Edge cubics="!2757 -788(;2782,-752 2801,-716 2815,-679q2757 -788Q2794 -734q2815 -679);"/>
+                    <Edge cubics="!2815 -679(;2842,-606 2848,-533 2833,-459q2815 -679Q2856 -570q2833 -459);"/>
+                    <Edge cubics="!2909 -1243(;2909,-1243 2815,-679 2815,-679q2909 -1243 2815 -679);"/>
+                    <Edge cubics="!2474 -2289(;2509,-2232 2542,-2177 2570,-2128q2474 -2289 2570 -2128);"/>
+                    <Edge cubics="!2570 -2128(;2816,-1706 2929,-1420 2912,-1263q2570 -2128Q2937 -1499q2912 -1263);"/>
+                    <Edge cubics="!2534 5735(;2537,5626 2500,5517 2515,5409q2534 5735Q2535 5690q2520 5572Q2507 5469q2515 5409);"/>
+                    <Edge cubics="!2515 5409(;2537,5407 2559,5405 2581,5403q2515 5409 2581 5403);"/>
+                    <Edge cubics="!2581 5403(;2591,5236 2603,5068 2648,4906q2581 5403Q2591 5244q2601 5153Q2618 5015q2648 4906);"/>
+                    <Edge cubics="!1511 2101(;1525,1946 1573,1789 1634,1641q1511 2101Q1531 1889q1634 1641);"/>
+                    <Edge cubics="!1634 1641(;1712,1449 1812,1267 1892,1075q1634 1641Q1674 1542q1762 1358Q1854 1167q1892 1075);"/>
+                    <Edge cubics="!1892 1075(;2001,814 2072,538 2175,275q1892 1075Q1950 935q2036 676Q2129 393q2175 275);"/>
+                    <Edge cubics="!2175 275(;2279,11 2420,-246 2639,-426q2175 275Q2361 -198q2639 -426);"/>
+                    <Edge cubics="!2639 -426(;2669,-450 2702,-477 2706,-516q2639 -426Q2669 -450q2682 -465Q2703 -490q2706 -516);"/>
+                    <Edge cubics="!2706 -516(;2711,-573 2648,-609 2609,-652q2706 -516Q2709 -551q2674 -589Q2629 -630q2609 -652);"/>
+                    <Edge cubics="!2609 -652(;2549,-719 2546,-820 2561,-909q2609 -652Q2532 -738q2561 -909);"/>
+                    <Edge cubics="!2561 -909(;2583,-1047 2640,-1179 2724,-1290q2561 -909Q2594 -1119q2724 -1290);"/>
+                    <Edge cubics="!2428 -1981(;2387,-2060 2346,-2141 2336,-2229q2428 -1981Q2388 -2058q2370 -2102Q2343 -2170q2336 -2229);"/>
+                    <Edge cubics="!2336 -2229(;2329,-2284 2335,-2341 2353,-2394q2336 -2229Q2325 -2313q2353 -2394);"/>
+                    <Edge cubics="!2353 -2394(;2140,-2590 2028,-2870 1893,-3126q2353 -2394Q2217 -2519q2094 -2737Q2022 -2864q1893 -3126);"/>
+                    <Edge cubics="!1893 -3126(;1621,-3641 1229,-4094 1019,-4639q1893 -3126Q1803 -3296q1433 -3871Q1139 -4327q1019 -4639);"/>
+                    <Edge cubics="!1019 -4639(;976,-4750 942,-4865 907,-4979q1019 -4639Q982 -4734q907 -4979);"/>
+                    <Edge cubics="!2552 4608(;2447,4439 2350,4264 2261,4085q2552 4608Q2397 4359q2261 4085);"/>
+                    <Edge cubics="!2261 4085(;2214,3992 2169,3896 2099,3818q2261 4085Q2207 3978q2189 3946Q2145 3869q2099 3818);"/>
+                    <Edge cubics="!2099 3818(;2048,3762 1986,3717 1934,3662q2099 3818Q2072 3789q2017 3740Q1959 3688q1934 3662);"/>
+                    <Edge cubics="!1934 3662(;1871,3596 1824,3516 1778,3437q1934 3662Q1892 3618q1850 3554Q1823 3515q1778 3437);"/>
+                    <Edge cubics="!1778 3437(;1687,3279 1600,3119 1520,2955q1778 3437Q1629 3177q1520 2955);"/>
+                    <Edge cubics="!1520 2955(;1464,2841 1411,2724 1391,2599q1520 2955Q1469 2851q1442 2781Q1405 2684q1391 2599);"/>
+                    <Edge cubics="!1391 2599(;1379,2521 1380,2441 1381,2362q1391 2599Q1379 2521q1381 2362);"/>
+                    <Edge cubics="!1381 2362(;1381,2302 1382,2242 1383,2182q1381 2362 1383 2182);"/>
+                    <Edge cubics="!1383 2182(;1383,2162 1384,2139 1397,2124q1383 2182Q1383 2140q1397 2124);"/>
+                    <Edge cubics="!1397 2124(;1412,2106 1439,2103 1462,2102q1397 2124Q1414 2104q1462 2102);"/>
+                    <Edge cubics="!907 -4979(;907,-4979 878,-5077 878,-5077q907 -4979 878 -5077);"/>
+                    <Edge cubics="!888 -5058(;884,-5065 880,-5071 877,-5078q888 -5058Q882 -5068q877 -5078);"/>
+                    <Edge cubics="!878 -5077(;878,-5077 877,-5078 877,-5078q878 -5077 877 -5078);"/>
+                    <Edge cubics="!2724 -1290(;2741,-1312 2753,-1328 2760,-1337q2724 -1290Q2750 -1323q2760 -1337);"/>
+                    <Edge cubics="!2760 -1337(;2760,-1337 2428,-1981 2428,-1981q2760 -1337 2428 -1981);"/>
+                    <Edge cubics="!1524 -3890(;1524,-3890 888,-5058 888,-5058q1524 -3890 888 -5058);"/>
+                    <Edge cubics="!1462 2102(;1480,2101 1496,2100 1511,2101q1462 2102Q1489 2100q1511 2101);"/>
+                    <Edge cubics="!2674 4816(;2677,4803 2680,4790 2683,4778q2674 4816Q2679 4796q2683 4778);"/>
+                    <Edge cubics="!2648 4906(;2661,4866 2669,4836 2674,4816q2648 4906Q2667 4846q2674 4816);"/>
+                    <Edge cubics="!2683 4778(;2642,4742 2598,4685 2552,4608q2683 4778Q2621 4724q2552 4608);"/>
+                    <Edge cubics="!2508 5913(;2525,5816 2533,5756 2534,5735q2508 5913Q2533 5767q2534 5735);"/>
+                    <Edge cubics="!2506 5925(;2507,5921 2507,5917 2508,5913q2506 5925Q2507 5919q2508 5913);"/>
+                  </edges>
+                </DOMShape>
+                <DOMGroup>
+                  <members>
+                    <DOMShape>
+                      <fills>
+                        <FillStyle index="1">
+                          <SolidColor color="#2E2830"/>
+                        </FillStyle>
+                        <FillStyle index="2">
+                          <SolidColor color="#4F3E51"/>
+                        </FillStyle>
+                      </fills>
+                      <edges>
+                        <Edge fillStyle0="1" edges="
+!3952.5 -12011|3935.5 -12011!3935.5 -12011[4020 #FFD1C1.4E 3952.5 -12011"/>
+                        <Edge fillStyle0="2" fillStyle1="1" edges="
+!3613.5 -9927.5[#DF4.76 #FFD96D.42 3541 -9826!3541 -9826[3405 -9614 3328 -9308!3328 -9308[3279 -9116 3229 -8747!3229 -8747[2224 -8108 1062 -7779!1062 -7779[-101 -7450 -1292 -7467!-1292 -7467[-1563 -7471 -1675 -7459!-1675 -7459[-1888 -7437
+ -2031 -7350!-2031 -7350[-2143 -7281 -2284 -7113!-2284 -7113[-2454 -6910 -2521 -6852!-2521 -6852[-2696 -6701 -2975 -6624!-2975 -6624[-3153 -6574 -3489 -6534!-3489 -6534|-4959 -6356!-4959 -6356[-5122 -6336 -5206 -6314!-5206 -6314[-5340
+ -6280 -5429 -6213!-5429 -6213[-5561 -6113 -5658 -5872!-5658 -5872[-5708 -5738 -5735 -5671!-5735 -5671[-5781 -5552 -5826 -5477!-5826 -5477[-5990 -5479 -6217 -5584!-6217 -5584[-6575 -5750 -6598 -5758!-6598 -5758[-6751 -5811 -6953 -5832
+!-6953 -5832[-7076 -5845 -7318 -5851!-7318 -5851|-8587 -5884!-8587 -5884[-9020 -5895 -9237 -5889!-9237 -5889[-9598 -5880 -9882 -5829!-9882 -5829[-10291 -5755 -10975 -5486!-10975 -5486[-11394 -5321 -11512 -5278!-11512 -5278[-11817 -5166
+ -12060 -5105!-12060 -5105[-12482 -4999 -12992 -4972!-12992 -4972[-13384 -4951 -13940 -4975!-13940 -4975[-14258 -4988 -14895 -5022!-14895 -5022[#FFC4A5.2D #FFEC55.9F -15448 -5033.5"/>
+                        <Edge fillStyle1="2" edges="
+!3613.5 -9927.5[#DD2.36 #FFDF31.BA 3444 -8094!3444 -8094[3377 -7877 3400 -7551!3400 -7551[3408 -7428 3406 -7384!3406 -7384[3403 -7290 3371 -7224!3371 -7224[3337 -7153 3259 -7092!3259 -7092[3207 -7051 3108 -6997!3108 -6997[2218 -6509 1261
+ -6163!1261 -6163[676 -5951 78 -5795!78 -5795[-780 -5827 -1322 -5816!-1322 -5816[-2030 -5801 -2498 -5678!-2498 -5678[-3127 -5511 -3488 -5123!-3488 -5123[-3518 -5090 -3722 -4838!-3722 -4838[-3862 -4664 -3978 -4577!-3978 -4577[-4085 -4496
+ -4251 -4424!-4251 -4424[-4255 -4422 -4405 -4362!-4405 -4362[-5081 -4318 -5754 -4205!-5754 -4205[-6056 -4154 -6178 -4145!-6178 -4145[-6417 -4128 -6597 -4177!-6597 -4177[-6799 -4233 -6937 -4384!-6937 -4384[-7087 -4397 -7254 -4411!-7254
+ -4411[-9434 -4597 -9434 -4551!-9434 -4551[-10105 -4202 -10637 -3957!-10637 -3957[-11149 -3721 -11627 -3536!-11627 -3536[-11740 -3275 -15983 -3643!-15983 -3643|-15983 -3798!-15983 -3798|-15448 -3798!-15448 -3798|-15448 -5033.5"/>
+                        <Edge fillStyle1="1" edges="
+!-15448 -5033.5|-15448 -12011!-15448 -12011|3264 -12011!3264 -12011[#D41.49 #FFD46B.1A 3613.5 -9927.5"/>
+                        <Edge cubics="!-10007 5153(;-10007,5153 -10004,5125 -10004,5125q-10007 5153 -10004 5125);"/>
+                        <Edge cubics="!-9907 5166(;-9941,5153 -9973,5139 -10004,5125q-9907 5166Q-9957 5146q-10004 5125);"/>
+                        <Edge cubics="!-10007 5153(;-9975,5156 -9942,5160 -9907,5166q-10007 5153Q-9959 5158q-9907 5166);"/>
+                        <Edge cubics="!-15448 9616(;-15448,9616 -15448,3564 -15448,3564q-15448 9616 -15448 3564);"/>
+                        <Edge cubics="!-15448 -3798(;-15448,-3798 -15448,-5033 -15448,-5033q-15448 -3798 -15448 -5033);"/>
+                        <Edge cubics="!-15448 -5033(;-15448,-5033 -15448,-5289 -15448,-5289q-15448 -5033 -15448 -5289);"/>
+                        <Edge cubics="!-15448 -5289(;-15448,-5289 -15448,-12011 -15448,-12011q-15448 -5289 -15448 -12011);"/>
+                        <Edge cubics="!-15448 -12011(;-15448,-12011 4663,-12011 4663,-12011q-15448 -12011 4663 -12011);"/>
+                        <Edge cubics="!4663 -12011(;4663,-12011 4866,-12011 4866,-12011q4663 -12011 4866 -12011);"/>
+                        <Edge cubics="!4866 -12011(;4866,-12011 6660,-12011 6660,-12011q4866 -12011 6660 -12011);"/>
+                        <Edge cubics="!1121 9616(;1121,9616 -15448,9616 -15448,9616q1121 9616 -15448 9616);"/>
+                        <Edge cubics="!-551 6021(;-1438,5980 -2327,5938 -3205,5803q-551 6021Q-1430 5980q-1881 5947Q-2619 5893q-3205 5803);"/>
+                        <Edge cubics="!-3205 5803(;-3560,5749 -3913,5679 -4268,5625q-3205 5803Q-3382 5776q-3736 5714Q-4090 5652q-4268 5625);"/>
+                        <Edge cubics="!-4268 5625(;-5458,5443 -6674,5438 -7853,5193q-4268 5625Q-4734 5554q-6065 5433Q-7195 5330q-7853 5193);"/>
+                        <Edge cubics="!-7853 5193(;-8198,5121 -8556,5020 -8809,4774q-7853 5193Q-8166 5128q-8365 5049Q-8637 4941q-8809 4774);"/>
+                        <Edge cubics="!-8809 4774(;-9000,4588 -9113,4337 -9203,4086q-8809 4774Q-8940 4646q-9044 4454Q-9124 4305q-9203 4086);"/>
+                        <Edge cubics="!-9203 4086(;-9412,3499 -9518,2876 -9513,2253q-9203 4086Q-9521 3194q-9513 2253);"/>
+                        <Edge cubics="!-9513 2253(;-9512,2116 -9512,1963 -9609,1865q-9513 2253Q-9512 2114q-9524 2044Q-9544 1930q-9609 1865);"/>
+                        <Edge cubics="!-9609 1865(;-9671,1802 -9761,1777 -9847,1755q-9609 1865Q-9650 1823q-9719 1795Q-9763 1776q-9847 1755);"/>
+                        <Edge cubics="!-9847 1755(;-10323,1635 -10805,1542 -11294,1471q-9847 1755Q-10535 1582q-11294 1471);"/>
+                        <Edge cubics="!-11519 633(;-11444,914 -11368,1196 -11294,1471q-11519 633 -11294 1471);"/>
+                        <Edge cubics="!-11627 -3536(;-11308,-3659 -10978,-3800 -10637,-3957q-11627 -3536Q-11149 -3721q-10637 -3957);"/>
+                        <Edge cubics="!-10637 -3957(;-10282,-4120 -9881,-4318 -9434,-4551q-10637 -3957Q-10105 -4202q-9434 -4551);"/>
+                        <Edge cubics="!-15983 -3798(;-15983,-3798 -15448,-3798 -15448,-3798q-15983 -3798 -15448 -3798);"/>
+                        <Edge cubics="!-15448 3564(;-15448,3564 -15983,3564 -15983,3564q-15448 3564 -15983 3564);"/>
+                        <Edge cubics="!-15983 3564(;-15983,3564 -15983,1547 -15983,1547q-15983 3564 -15983 1547);"/>
+                        <Edge cubics="!-15983 -3643(;-15983,-3643 -15983,-3798 -15983,-3798q-15983 -3643 -15983 -3798);"/>
+                        <Edge cubics="!-4405 -4362(;-4854,-4333 -5306,-4280 -5754,-4205q-4405 -4362Q-5081 -4318q-5754 -4205);"/>
+                        <Edge cubics="!-5754 -4205(;-6034,-4158 -6324,-4102 -6597,-4177q-5754 -4205Q-6056 -4154q-6178 -4145Q-6417 -4128q-6597 -4177);"/>
+                        <Edge cubics="!-4405 -4362(;-4252,-4420 -4103,-4482 -3978,-4577q-4405 -4362 -4251 -4424Q-4085 -4496q-3978 -4577);"/>
+                        <Edge cubics="!-3978 -4577(;-3782,-4724 -3655,-4943 -3488,-5123q-3978 -4577Q-3862 -4664q-3722 -4838Q-3518 -5090q-3488 -5123);"/>
+                        <Edge cubics="!-3488 -5123(;-2957,-5694 -2101,-5800 -1322,-5816q-3488 -5123Q-3127 -5511q-2498 -5678Q-2030 -5801q-1322 -5816);"/>
+                        <Edge cubics="!-1322 -5816(;-854,-5825 -386,-5815 78,-5795q-1322 -5816Q-780 -5827q78 -5795);"/>
+                        <Edge cubics="!78 -5795(;1134,-6070 2154,-6474 3108,-6997q78 -5795Q676 -5951q1261 -6163Q2218 -6509q3108 -6997);"/>
+                        <Edge cubics="!3108 -6997(;3211,-7053 3320,-7118 3371,-7224q3108 -6997Q3207 -7051q3259 -7092Q3337 -7153q3371 -7224);"/>
+                        <Edge cubics="!3371 -7224(;3419,-7324 3407,-7441 3400,-7551q3371 -7224Q3403 -7290q3406 -7384Q3408 -7428q3400 -7551);"/>
+                        <Edge cubics="!3400 -7551(;3387,-7733 3390,-7920 3444,-8094q3400 -7551Q3377 -7877q3444 -8094);"/>
+                        <Edge cubics="!3444 -8094(;3591,-8570 4068,-8847 4467,-9146q3444 -8094Q3539 -8401q3861 -8686Q3976 -8788q4160 -8922Q4263 -8998q4467 -9146);"/>
+                        <Edge cubics="!4467 -9146(;5438,-9874 6087,-10929 6660,-12011q4467 -9146Q5239 -9725q5911 -10730Q6222 -11195q6660 -12011);"/>
+                        <Edge cubics="!-6937 -4384(;-7037,-4393 -7143,-4402 -7254,-4411q-6937 -4384Q-7087 -4397q-7254 -4411);"/>
+                        <Edge cubics="!-6597 -4177(;-6732,-4214 -6845,-4283 -6937,-4384q-6597 -4177Q-6799 -4233q-6937 -4384);"/>
+                        <Edge cubics="!-7254 -4411(;-8707,-4535 -9434,-4582 -9434,-4551q-7254 -4411Q-9434 -4597q-9434 -4551);"/>
+                        <Edge cubics="!-551 6021(;-551,6021 2218,6021 2218,6021q-551 6021 2218 6021);"/>
+                        <Edge cubics="!2296 9518(;2355,9649 2402,9764 2438,9864q2296 9518Q2384 9714q2438 9864);"/>
+                        <Edge cubics="!1121 9616(;1784,9737 2176,9705 2296,9518q1121 9616Q2116 9798q2296 9518);"/>
+                        <Edge cubics="!-15983 1547(;-13654,964 -12166,659 -11519,633q-15983 1547Q-12489 672q-11519 633);"/>
+                        <Edge cubics="!-11627 -3536(;-11702,-3362 -13154,-3398 -15983,-3643q-11627 -3536Q-11740 -3275q-15983 -3643);"/>
+                        <Edge cubics="!2438 9864(;2560,10201 2487,8920 2218,6021q2438 9864Q2621 10369q2218 6021);"/>
+                        <Edge cubics="!-9944 -6021(;-9517,-6089 -9083,-6081 -8651,-6071q-9944 -6021Q-9658 -6066q-9299 -6075Q-9073 -6081q-8651 -6071);"/>
+                        <Edge cubics="!-8651 -6071(;-8120,-6059 -7590,-6044 -7060,-6029q-8651 -6071Q-8120 -6059q-7060 -6029);"/>
+                        <Edge cubics="!-7060 -6029(;-6742,-6020 -6402,-6004 -6143,-5818q-7060 -6029Q-6747 -6020q-6579 -5990Q-6316 -5942q-6143 -5818);"/>
+                        <Edge cubics="!-6143 -5818(;-6103,-5790 -6062,-5756 -6013,-5754q-6143 -5818Q-6092 -5782q-6081 -5776Q-6045 -5755q-6013 -5754);"/>
+                        <Edge cubics="!-6013 -5754(;-5873,-5747 -5857,-5948 -5825,-6084q-6013 -5754Q-5923 -5749q-5878 -5865Q-5873 -5879q-5825 -6084);"/>
+                        <Edge cubics="!-5825 -6084(;-5744,-6417 -5329,-6519 -4989,-6559q-5825 -6084Q-5770 -6309q-5504 -6431Q-5309 -6521q-4989 -6559);"/>
+                        <Edge cubics="!-4989 -6559(;-4595,-6604 -4201,-6650 -3806,-6685q-4989 -6559Q-4162 -6653q-3806 -6685);"/>
+                        <Edge cubics="!-3806 -6685(;-3474,-6714 -3123,-6742 -2850,-6933q-3806 -6685Q-3464 -6715q-3306 -6748Q-3031 -6806q-2850 -6933);"/>
+                        <Edge cubics="!-2850 -6933(;-2594,-7111 -2435,-7416 -2155,-7554q-2850 -6933Q-2743 -7007q-2511 -7258Q-2309 -7478q-2155 -7554);"/>
+                        <Edge cubics="!-2155 -7554(;-1937,-7662 -1682,-7651 -1439,-7649q-2155 -7554Q-2012 -7625q-1806 -7643Q-1708 -7651q-1439 -7649);"/>
+                        <Edge cubics="!-1439 -7649(;143,-7631 1728,-8079 3067,-8922q-1439 -7649Q-253 -7635q905 -7963Q2063 -8290q3067 -8922);"/>
+                        <Edge cubics="!3067 -8922(;3115,-9286 3168,-9662 3361,-9974q3067 -8922Q3114 -9281q3160 -9467Q3232 -9765q3361 -9974);"/>
+                        <Edge cubics="!3361 -9974(;3521,-10233 3766,-10427 3973,-10652q3361 -9974Q3458 -10131q3649 -10326Q3757 -10435q3973 -10652);"/>
+                        <Edge cubics="!3973 -10652(;4586,-11318 4852,-12289 4664,-13175q3973 -10652Q4433 -11151q4619 -11831Q4805 -12510q4664 -13175);"/>
+                        <Edge cubics="!4664 -13175(;4720,-13171 4776,-13167 4832,-13163q4664 -13175 4832 -13163);"/>
+                        <Edge cubics="!4832 -13163(;5011,-12391 4859,-11552 4443,-10884q4832 -13163Q4998 -12447q4799 -11709Q4678 -11259q4443 -10884);"/>
+                        <Edge cubics="!4443 -10884(;4339,-10722 4225,-10572 4097,-10435q4443 -10884Q4293 -10644q4097 -10435);"/>
+                        <Edge cubics="!4097 -10435(;3938,-10265 3757,-10113 3614,-9927q4097 -10435 3804 -10142Q3691 -10027q3614 -9927);"/>
+                        <Edge cubics="!3614 -9927(;3589,-9897 3564,-9862 3541,-9826q3614 -9927 3541 -9826);"/>
+                        <Edge cubics="!3541 -9826(;3337,-9509 3280,-9121 3229,-8747q3541 -9826Q3405 -9614q3328 -9308Q3279 -9116q3229 -8747);"/>
+                        <Edge cubics="!3229 -8747(;1889,-7895 296,-7444 -1292,-7467q3229 -8747Q2224 -8108q1062 -7779Q-101 -7450q-1292 -7467);"/>
+                        <Edge cubics="!-1292 -7467(;-1545,-7471 -1815,-7482 -2031,-7350q-1292 -7467Q-1563 -7471q-1675 -7459Q-1888 -7437q-2031 -7350);"/>
+                        <Edge cubics="!-2031 -7350(;-2230,-7228 -2344,-7005 -2521,-6852q-2031 -7350Q-2143 -7281q-2284 -7113Q-2454 -6910q-2521 -6852);"/>
+                        <Edge cubics="!-2521 -6852(;-2782,-6626 -3147,-6575 -3489,-6534q-2521 -6852Q-2696 -6701q-2975 -6624Q-3153 -6574q-3489 -6534);"/>
+                        <Edge cubics="!-3489 -6534(;-3979,-6475 -4469,-6415 -4959,-6356q-3489 -6534 -4959 -6356);"/>
+                        <Edge cubics="!-4959 -6356(;-5123,-6336 -5296,-6313 -5429,-6213q-4959 -6356Q-5122 -6336q-5206 -6314Q-5340 -6280q-5429 -6213);"/>
+                        <Edge cubics="!-5429 -6213(;-5654,-6043 -5682,-5720 -5826,-5477q-5429 -6213Q-5561 -6113q-5658 -5872Q-5708 -5738q-5735 -5671Q-5781 -5552q-5826 -5477);"/>
+                        <Edge cubics="!-5826 -5477(;-6101,-5481 -6337,-5666 -6598,-5758q-5826 -5477Q-5990 -5479q-6217 -5584Q-6575 -5750q-6598 -5758);"/>
+                        <Edge cubics="!-6598 -5758(;-6827,-5838 -7075,-5845 -7318,-5851q-6598 -5758Q-6751 -5811q-6953 -5832Q-7076 -5845q-7318 -5851);"/>
+                        <Edge cubics="!-7318 -5851(;-7741,-5862 -8164,-5873 -8587,-5884q-7318 -5851 -8587 -5884);"/>
+                        <Edge cubics="!-8587 -5884(;-9020,-5895 -9456,-5906 -9882,-5829q-8587 -5884Q-9020 -5895q-9237 -5889Q-9598 -5880q-9882 -5829);"/>
+                        <Edge cubics="!-9882 -5829(;-10636,-5693 -11317,-5292 -12060,-5105q-9882 -5829Q-10291 -5755q-10975 -5486Q-11394 -5321q-11512 -5278Q-11817 -5166q-12060 -5105);"/>
+                        <Edge cubics="!-12060 -5105(;-13289,-4797 -14583,-5093 -15848,-5023q-12060 -5105Q-12482 -4999q-12992 -4972Q-13384 -4951q-13940 -4975Q-14258 -4988q-14895 -5022Q-15452 -5045q-15848 -5023);"/>
+                        <Edge cubics="!-15848 -5023(;-15844,-5094 -15840,-5166 -15837,-5238q-15848 -5023 -15837 -5238);"/>
+                        <Edge cubics="!-15837 -5238(;-15234,-5334 -14619,-5355 -14011,-5300q-15837 -5238Q-14927 -5383q-14011 -5300);"/>
+                        <Edge cubics="!-14011 -5300(;-13976,-5261 -13923,-5243 -13872,-5228q-14011 -5300Q-13973 -5258q-13872 -5228);"/>
+                        <Edge cubics="!-13872 -5228(;-13220,-5046 -12521,-5193 -11879,-5410q-13872 -5228Q-13421 -5102q-12872 -5169Q-12432 -5223q-11879 -5410);"/>
+                        <Edge cubics="!-11879 -5410(;-11237,-5627 -10613,-5915 -9944,-6021q-11879 -5410Q-11241 -5645q-10922 -5757Q-10357 -5956q-9944 -6021);"/>
+                      </edges>
+                    </DOMShape>
+                  </members>
+                </DOMGroup>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_2" color="#9933CC" locked="true">
+          <frames>
+            <DOMFrame index="0" duration="134" keyMode="9728">
+              <elements>
+                <DOMGroup>
+                  <members>
+                    <DOMShape>
+                      <fills>
+                        <FillStyle index="1">
+                          <SolidColor color="#C7F6FF"/>
+                        </FillStyle>
+                      </fills>
+                      <edges>
+                        <Edge fillStyle1="1" edges="
+!-282 -14311|16231 -14311!16231 -14311|16231 11583!16231 11583|-282 11583!-282 11583|-282 -14311"/>
+                        <Edge cubics="!-282 -14311(;-282,-14311 16231,-14311 16231,-14311q-282 -14311 16231 -14311);"/>
+                        <Edge cubics="!16231 11583(;16231,11583 -282,11583 -282,11583q16231 11583 -282 11583);"/>
+                        <Edge cubics="!16231 -14311(;16231,-14311 16231,11583 16231,11583q16231 -14311 16231 11583);"/>
+                        <Edge cubics="!-282 11583(;-282,11583 -282,-14311 -282,-14311q-282 11583 -282 -14311);"/>
+                      </edges>
+                    </DOMShape>
+                  </members>
+                </DOMGroup>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

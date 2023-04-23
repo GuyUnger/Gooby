@@ -1,0 +1,98 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="enemies/EnemyPuck" itemID="6440c084-000001a0" linkageExportForAS="true" linkageBaseClass="Enemy" linkageClassName="EnemyPuck" lastModified="1682105102" lastUniqueIdentifier="1">
+  <timeline>
+    <DOMTimeline name="EnemyPuck" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="Layer_2" color="#9933CC">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[var accel: Number
+
+var set_properties_t = 0.0
+
+health=15
+
+var hit_t = 0
+
+function _process(delta) {
+if(!visible)return
+	set_properties_t -= delta
+	if (set_properties_t < 0.0) {
+		speed = 100.0 + Math.random() * 400.0
+		accel = 0.5 + Math.random() * 2.0
+		set_properties_t = Math.random() * 1.0
+	}
+	var velocity_to_x = direction_to_player_x
+	var velocity_to_y = direction_to_player_y
+	velocity_to_x *= speed
+	velocity_to_y *= speed
+	velocity_x += (velocity_to_x - velocity_x) * delta * accel * 1.5
+	velocity_y += (velocity_to_y - velocity_y) * delta * accel * 1.5
+	
+	scaleX = direction_to_player_x < 0 ? -1 : 1
+	
+	var speed_scale = 1.0
+	if (distance_to_player < 200.0){
+		speed_scale = distance_to_player / 400.0 + 0.5
+	}
+	x += velocity_x * delta * speed_scale
+	y += velocity_y * delta * speed_scale
+
+if (hit_t>0){
+hit_t-=delta
+if(m.currentLabel=="hit"&&hit_t<=0.5){
+m.gotoAndPlay(1)
+}
+return
+}
+if(distance_to_player<80){
+Game.player.hit(this,1)
+hit_t=0.7
+m.gotoAndStop("hit")
+}
+}]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true" heightLiteral="32">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMGroup>
+                  <matrix>
+                    <Matrix a="0.83258056640625" d="0.83258056640625" tx="-3.35" ty="-1.35"/>
+                  </matrix>
+                  <members>
+                    <DOMShape>
+                      <matrix>
+                        <Matrix a="0.83258056640625" d="0.83258056640625" tx="-3.35" ty="-1.35"/>
+                      </matrix>
+                      <fills>
+                        <FillStyle index="1">
+                          <SolidColor color="#23201F" alpha="0.498039215686275"/>
+                        </FillStyle>
+                      </fills>
+                      <edges>
+                        <Edge fillStyle1="1" edges="!1005 33[1005 120 734 182!734 182[464 245 81 245!81 245[-303 245 -573 182!-573 182[-844 120 -844 33!-844 33[-844 -55 -573 -117!-573 -117[-303 -179 81 -179!81 -179[464 -179 734 -117!734 -117[1005 -55 1005 33"/>
+                      </edges>
+                    </DOMShape>
+                  </members>
+                </DOMGroup>
+                <DOMSymbolInstance libraryItemName="enemies/EnemyPuckModel" name="m" selected="true">
+                  <matrix>
+                    <Matrix a="1.03985595703125" tx="-4.6" ty="2.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

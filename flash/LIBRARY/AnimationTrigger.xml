@@ -1,0 +1,72 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="AnimationTrigger" itemID="643de025-000001e3" linkageExportForAS="true" linkageBaseClass="Node2D" linkageClassName="AnimationTrigger" lastModified="1681868693">
+  <timeline>
+    <DOMTimeline name="AnimationTrigger" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="Layer_3" color="#FF800A">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[	var scalex = scaleX * 100
+	var scaley = scaleY * 100
+	if (Math.abs((rotation / 180) % 1) > 0.1) {
+		var a = scalex
+		scalex = scaley
+		scaley = a
+	}
+	]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop()
+
+var t = 0
+
+var entered = false
+var entered_t = 0
+
+function _process(delta) {
+	t += delta
+	if (t < 0.5) return
+	if(Math.abs(Game.player.x - x) < scalex*0.5 && Math.abs(Game.player.y - y) < scaley*0.5) {
+		if (!entered){
+		entered = true
+		MovieClip(parent).fl.play()
+Game.cutscening=true
+	}
+}}]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true" heightLiteral="32">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal">
+                        <fill>
+                          <SolidColor color="#FF0A0A"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge strokeStyle="1" edges="!-1000 -1000|1000 -1000!1000 -1000|1000 1000!1000 1000|-1000 1000!-1000 1000|-1000 -1000"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

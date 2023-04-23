@@ -1,0 +1,267 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="upgrades" itemID="643cb435-000002d9" lastModified="1682052508">
+  <timeline>
+    <DOMTimeline name="upgrades" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="Layer_4" color="#FF4FFF">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[var yeah=new Yeah()
+function show(){
+visible=true
+yeah.play()
+}]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop()
+visible = false]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true" heightLiteral="32">
+          <frames>
+            <DOMFrame index="0" duration="2" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[var upgrades = []
+
+
+y=760/2+50
+
+load()
+function load() {
+
+//first
+var damage1=		add("damage",[])
+
+//sequence
+var attack_speed1=	add("attack speed", [damage1])
+var burst1=			add("burst", [damage1])
+var rate1=			add("rate", [damage1])
+
+var speed1=			add("speed", [attack_speed1,burst1,rate1])
+
+//row1
+var rate2=			add("rate", [speed1])
+var damage2=		add("damage", [rate2])
+var bombs1=			add("burst", [damage2])
+
+var attack_speed2=	add("attack speed", [speed1])
+var speed2=			add("speed", [attack_speed2])
+var spread1=		add("spread", [speed2])
+
+var health1=		add("health", [speed1])
+var burst2=			add("burst", [health1])
+var minion1=		add("minion", [burst2])
+
+var ultimate2=		add("ultimate", [minion1,spread1,bombs1])
+
+damage1.nextFrame()
+
+
+
+for(var i=0;i<100;i++){
+	var line=[]
+	for(var j=0;j<upgrades.length;j++){
+		var upgrade=upgrades[j]
+		if (upgrade.level==i){
+			line.push(upgrade)
+		}
+	}
+	for(j=0;j<line.length;j++){
+		upgrade=line[j]
+		upgrade.x = (j - (line.length-1)*0.5) * 100
+	}
+}
+
+graphics.lineStyle(10)
+for(i=0;i<upgrades.length;i++){
+upgrade = upgrades[i]
+for(j=0;j<upgrade.depends.length;j++){
+var depend= upgrade.depends[j]
+graphics.moveTo(upgrade.x,upgrade.y)
+graphics.lineTo(depend.x,depend.y)
+}
+}
+
+
+}
+
+
+function add(tag, depends){
+var upgrade = create(tag)
+upgrade.depends = depends
+
+var info = ""
+
+switch(tag){
+case "damage":
+info = "stronger fireballs"
+break
+case "attack speed":
+info = "fireballs move faster"
+break
+case "burst":
+info = "more fireballs"
+break
+case "rate":
+info = "shoot faster"
+break
+case "speed":
+info = "run faster"
+break
+case "health":
+info = "more hearts"
+break
+case "minion":
+info = "minions"
+break
+case "spread":
+info = "side fireballs"
+break
+case "ultimate":
+info = "you're ready"
+break
+}
+
+upgrade.info.lbl.text = info.toUpperCase()
+
+if (depends != null){
+for(var i:int=0;i<depends.length;i++){
+var depend = depends[i]
+upgrade.level = Math.max(upgrade.level,depend.level+1)
+}
+}
+upgrade.y = -upgrade.level * 150
+return upgrade
+}
+
+function create(tag){
+var upgrade = new Upgrade()
+upgrades.push(upgrade)
+addChild(upgrade)
+upgrade.image.gotoAndStop(tag)
+upgrade.tag = tag
+return upgrade
+}
+
+function select(upgrade){
+Game.room.player.add_upgrade(upgrade.tag)
+upgrade.nextFrame()
+visible = false
+
+y = 0
+var count=0
+
+for(var i=0;i<upgrades.length;i++){
+var upgrade=upgrades[i]
+
+if (upgrade.currentFrame==2){
+y+=-upgrade.y
+count+=1
+}
+
+if(upgrade.currentFrame!=1){
+continue
+}
+var unlock=true
+for(var j=0;j<upgrade.depends.length;j++){
+if (upgrade.depends[j].currentFrame!=3){
+unlock=false
+}
+}
+if(unlock){
+upgrade.nextFrame()
+y+=-upgrade.y
+count+=1
+}
+}
+y/=count
+y+=760/2 +50
+}]]></script>
+              </Actionscript>
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FF0000"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-27184 5052[-27820 5059 -28143 5032!-28143 5032[-28675 4988 -29069 4833!-29069 4833|-29075 4748!-29075 4748[-29202 4769 -29340 4648!-29340 4648[-29363 4627 -29442 4544!-29442 4544[-29504 4479 -29550 4444!-29550 4444[-29575 4427 -29626
+ 4392!-29626 4392[-29671 4360 -29692 4327!-29692 4327[-29713 4298 -29726 4248!-29726 4248|-29748 4164!-29748 4164[-29778 4033 -29888 3814!-29888 3814[-30007 3578 -30040 3466!-30040 3466[-30084 3312 -30095 3061!-30095 3061[-30113 2724
+ -30101 2134!-30101 2134[-30042 2119 -29871 2136!-29871 2136[-29725 2150 -29650 2107!-29650 2107[-29598 2079 -29548 2009!-29548 2009[-29496 1925 -29467 1886!-29467 1886[-29398 1794 -29263 1706!-29263 1706[-29015 1544 -28837 1612!-28837
+ 1612[-28766 1719 -28693 1963!-28693 1963[-28594 2288 -28546 2419!-28546 2419[-28422 2765 -28241 3080!-28241 3080[-28149 3237 -28058 3280!-28058 3280[-27974 3318 -27862 3293!-27862 3293[-27789 3276 -27668 3220!-27668 3220|-27484 2661
+!-27484 2661[-27438 2513 -27426 2455!-27426 2455[-27409 2357 -27409 2157!-27409 2157|-27407 962!-27407 962[-27046 902 -26857 887!-26857 887[-26552 862 -26309 902!-26309 902[-26031 947 -25814 1089!-25814 1089[-25572 1245 -25479 1477!-25479
+ 1477[-25431 1596 -25418 1758!-25418 1758[-25410 1859 -25414 2048!-25414 2048|-25424 2528!-25424 2528[-25427 2719 -25437 2786!-25437 2786[-25462 2976 -25554 3191!-25554 3191[-25618 3339 -25750 3572!-25750 3572[-25858 3762 -25902 3854
+!-25902 3854[-25979 4016 -26006 4154!-26006 4154[-26060 4158 -26098 4216!-26098 4216[-26123 4250 -26150 4327!-26150 4327[-26221 4519 -26356 4677!-26356 4677[-26492 4834 -26671 4934!-26671 4934[-26811 5011 -26948 5036!-26948 5036[-26999
+ 5046 -27065 5048!-27065 5048[-27086 5050 -27184 5052"/>
+                    <Edge cubics="!-27184 5052(;-27822,5059 -28477,5065 -29069,4833q-27184 5052Q-27820 5059q-28143 5032Q-28675 4988q-29069 4833);"/>
+                    <Edge cubics="!-29069 4833(;-29071,4804 -29073,4775 -29075,4748q-29069 4833 -29075 4748);"/>
+                    <Edge cubics="!-29075 4748(;-29171,4763 -29267,4711 -29340,4648q-29075 4748Q-29202 4769q-29340 4648);"/>
+                    <Edge cubics="!-29340 4648(;-29411,4583 -29471,4504 -29550,4444q-29340 4648Q-29363 4627q-29442 4544Q-29504 4479q-29550 4444);"/>
+                    <Edge cubics="!-29550 4444(;-29600,4408 -29657,4379 -29692,4327q-29550 4444Q-29575 4427q-29626 4392Q-29671 4360q-29692 4327);"/>
+                    <Edge cubics="!-29692 4327(;-29725,4281 -29734,4219 -29748,4164q-29692 4327Q-29713 4298q-29726 4248Q-29726 4248q-29748 4164);"/>
+                    <Edge cubics="!-29748 4164(;-29805,3918 -29969,3708 -30040,3466q-29748 4164Q-29778 4033q-29888 3814Q-30007 3578q-30040 3466);"/>
+                    <Edge cubics="!-30040 3466(;-30078,3335 -30090,3197 -30095,3061q-30040 3466Q-30084 3312q-30095 3061);"/>
+                    <Edge cubics="!-30095 3061(;-30111,2751 -30107,2444 -30101,2134q-30095 3061Q-30113 2724q-30101 2134);"/>
+                    <Edge cubics="!-30101 2134(;-29953,2098 -29784,2182 -29650,2107q-30101 2134Q-30042 2119q-29871 2136Q-29725 2150q-29650 2107);"/>
+                    <Edge cubics="!-29650 2107(;-29565,2061 -29525,1963 -29467,1886q-29650 2107Q-29598 2079q-29548 2009Q-29496 1925q-29467 1886);"/>
+                    <Edge cubics="!-29467 1886(;-29413,1813 -29340,1756 -29263,1706q-29467 1886Q-29398 1794q-29263 1706);"/>
+                    <Edge cubics="!-29263 1706(;-29136,1623 -28979,1558 -28837,1612q-29263 1706Q-29015 1544q-28837 1612);"/>
+                    <Edge cubics="!-28837 1612(;-28767,1717 -28729,1842 -28693,1963q-28837 1612Q-28766 1719q-28693 1963);"/>
+                    <Edge cubics="!-28693 1963(;-28646,2117 -28602,2269 -28546,2419q-28693 1963Q-28594 2288q-28546 2419);"/>
+                    <Edge cubics="!-28546 2419(;-28464,2647 -28362,2868 -28241,3080q-28546 2419Q-28422 2765q-28241 3080);"/>
+                    <Edge cubics="!-28241 3080(;-28195,3159 -28141,3241 -28058,3280q-28241 3080Q-28149 3237q-28058 3280);"/>
+                    <Edge cubics="!-28058 3280(;-27933,3337 -27791,3278 -27668,3220q-28058 3280Q-27974 3318q-27862 3293Q-27789 3276q-27668 3220);"/>
+                    <Edge cubics="!-27668 3220(;-27607,3034 -27545,2847 -27484,2661q-27668 3220 -27484 2661);"/>
+                    <Edge cubics="!-27484 2661(;-27463,2594 -27439,2524 -27426,2455q-27484 2661Q-27438 2513q-27426 2455);"/>
+                    <Edge cubics="!-27426 2455(;-27409,2357 -27409,2257 -27409,2157q-27426 2455Q-27409 2357q-27409 2157);"/>
+                    <Edge cubics="!-27409 2157(;-27407,1760 -27407,1360 -27407,962q-27409 2157 -27407 962);"/>
+                    <Edge cubics="!-27407 962(;-27044,902 -26673,843 -26309,902q-27407 962Q-27046 902q-26857 887Q-26552 862q-26309 902);"/>
+                    <Edge cubics="!-26309 902(;-25962,958 -25610,1150 -25479,1477q-26309 902Q-26031 947q-25814 1089Q-25572 1245q-25479 1477);"/>
+                    <Edge cubics="!-25479 1477(;-25408,1656 -25410,1856 -25414,2048q-25479 1477Q-25431 1596q-25418 1758Q-25410 1859q-25414 2048);"/>
+                    <Edge cubics="!-25414 2048(;-25418,2209 -25420,2369 -25424,2528q-25414 2048 -25424 2528);"/>
+                    <Edge cubics="!-25424 2528(;-25425,2615 -25425,2701 -25437,2786q-25424 2528Q-25427 2719q-25437 2786);"/>
+                    <Edge cubics="!-25437 2786(;-25473,3066 -25610,3324 -25750,3572q-25437 2786Q-25462 2976q-25554 3191Q-25618 3339q-25750 3572);"/>
+                    <Edge cubics="!-25750 3572(;-25856,3756 -25965,3945 -26006,4154q-25750 3572Q-25858 3762q-25902 3854Q-25979 4016q-26006 4154);"/>
+                    <Edge cubics="!-26006 4154(;-26087,4160 -26123,4252 -26150,4327q-26006 4154Q-26060 4158q-26098 4216Q-26123 4250q-26150 4327);"/>
+                    <Edge cubics="!-26150 4327(;-26244,4583 -26432,4802 -26671,4934q-26150 4327Q-26221 4519q-26356 4677Q-26492 4834q-26671 4934);"/>
+                    <Edge cubics="!-26671 4934(;-26757,4982 -26849,5019 -26948,5036q-26671 4934Q-26811 5011q-26948 5036);"/>
+                    <Edge cubics="!-26948 5036(;-27026,5050 -27105,5050 -27184,5052q-26948 5036Q-26999 5046q-27065 5048Q-27086 5050q-27184 5052);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_3" color="#FF800A">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#342C2A" alpha="0.6"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!-14643 -45288|14244 -45288!14244 -45288|14244 9446!14244 9446|-14643 9446!-14643 9446|-14643 -45288"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

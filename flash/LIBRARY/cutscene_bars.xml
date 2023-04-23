@@ -1,0 +1,69 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="cutscene_bars" itemID="643e2f9f-0000025d" lastModified="1681884135">
+  <timeline>
+    <DOMTimeline name="cutscene_bars" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true" heightLiteral="32">
+          <frames>
+            <DOMFrame index="0" duration="19" tweenType="shape" hasCustomEase="true" keyMode="17922">
+              <tweens>
+                <CustomEase target="all" name="My Ease 5">
+                  <Point/>
+                  <Point x="0.3028" y="0.4"/>
+                  <Point x="0.7368" y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <MorphShape>
+                <morphSegments>
+                  <MorphSegment startPointA="#FFFFCD.C2, #FFFFDF.93" startPointB="#FFFFCD.C2, -32.421875" strokeIndex1="0" strokeIndex2="0" fillIndex1="0" fillIndex2="1">
+                    <MorphCurves controlPointA="#0.01, #FFFFDF.93" anchorPointA="#32.3F, #FFFFDF.93" controlPointB="#0.01, -32.421875" anchorPointB="#32.3F, -32.421875" isLine="true"/>
+                    <MorphCurves controlPointA="#32.3F, #FFFFE0.56" anchorPointA="#32.3F, #FFFFE1.19" controlPointB="#32.3F, #FFFFE2.F3" anchorPointB="#32.3F, #FFFFE6.51" isLine="true"/>
+                    <MorphCurves controlPointA="#0.01, #FFFFE1.19" anchorPointA="#FFFFCD.C2, #FFFFE1.19" controlPointB="#0.01, #FFFFE6.51" anchorPointB="#FFFFCD.C2, #FFFFE6.51" isLine="true"/>
+                    <MorphCurves controlPointA="#FFFFCD.C2, #FFFFE0.56" anchorPointA="#FFFFCD.C2, #FFFFDF.93" controlPointB="#FFFFCD.C2, #FFFFE2.F3" anchorPointB="#FFFFCD.C2, -32.421875" isLine="true"/>
+                  </MorphSegment>
+                  <MorphSegment startPointA="#FFFFCD.C2, #1D.A" startPointB="#FFFFCD.C2, #19.AF" strokeIndex1="0" strokeIndex2="0" fillIndex1="0" fillIndex2="1">
+                    <MorphCurves controlPointA="#0.01, #1D.A" anchorPointA="#32.3F, #1D.A" controlPointB="#0.01, #19.AF" anchorPointB="#32.3F, #19.AF" isLine="true"/>
+                    <MorphCurves controlPointA="#32.3F, #1F.07" anchorPointA="#32.3F, #20.6D" controlPointB="#32.3F, #1D.0E" anchorPointB="#32.3F, #20.6C" isLine="true"/>
+                    <MorphCurves controlPointA="#0.01, #20.6D" anchorPointA="#FFFFCD.C2, #20.6D" controlPointB="#0.01, #20.6C" anchorPointB="#FFFFCD.C2, #20.6C" isLine="true"/>
+                    <MorphCurves controlPointA="#FFFFCD.C2, #1F.07" anchorPointA="#FFFFCD.C2, #1D.A" controlPointB="#FFFFCD.C2, #1D.0E" anchorPointB="#FFFFCD.C2, #19.AF" isLine="true"/>
+                  </MorphSegment>
+                </morphSegments>
+                <morphHintsList/>
+              </MorphShape>
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor alpha="0.00392156862745098"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-12862 -8301|12863 -8301!12863 -8301|12863 -7911!12863 -7911|-12862 -7911!-12862 -7911|-12862 -8301!-12862 7584|12863 7584!12863 7584|12863 8301!12863 8301|-12862 8301!-12862 8301|-12862 7584"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="19" keyMode="9728">
+              <morphHintsList>
+                <MorphHint startPoint="#FFFFCD.C2, #20.6C" endPoint="#FFFFCD.C2, #20.6D" key="0"/>
+                <MorphHint startPoint="#FFFFCD.C2, #FFFFE6.51" endPoint="#FFFFCD.C2, #FFFFE1.19" key="0"/>
+              </morphHintsList>
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-12862 -8300|12863 -8300!12863 -8300|12863 -6575!12863 -6575|-12862 -6575!-12862 -6575|-12862 -8300!-12862 6575|12863 6575!12863 6575|12863 8300!12863 8300|-12862 8300!-12862 8300|-12862 6575"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,51 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="details/DetailGrass" itemID="643193ea-00000016" linkageExportForAS="true" linkageBaseClass="Detail" linkageClassName="detail_grass" lastModified="1681421248">
+  <timeline>
+    <DOMTimeline name="DetailGrass" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true" heightLiteral="32">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape selected="true" isFloating="true">
+                  <matrix>
+                    <Matrix ty="15"/>
+                  </matrix>
+                  <fills>
+                    <FillStyle index="1">
+                      <LinearGradient>
+                        <matrix>
+                          <Matrix a="0" b="-0.0088043212890625" c="0.03466796875" d="0" tx="2" ty="-3.05"/>
+                        </matrix>
+                        <GradientEntry color="#96CCB0" alpha="0" ratio="0"/>
+                        <GradientEntry color="#91C3AA" ratio="1"/>
+                      </LinearGradient>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!531 120S2|-470 91!-470 91[-534 -114 -520 -330!-520 -330[-517 -389 -520 -448!-520 -448[-559 -1149 -398 -1833!-398 -1833[-341 -2074 -242 -2302!-242 -2302[-238 -2313 -226 -2323!-226 -2323[-132 -2324 -116 -2230!-116 -2230[15 -1447 152 -663
+!152 -663[164 -589 159 -514!159 -514|307 -912!307 -912|425 -912!425 -912[585 -480 584 -17!584 -17[584 -2 591 13!591 13[618 70 602 129!602 129[559 134 531 120"/>
+                    <Edge cubics="!159 -514(;208,-647 258,-780 307,-912q159 -514 307 -912);"/>
+                    <Edge cubics="!307 -912(;346,-912 386,-912 425,-912q307 -912 425 -912);"/>
+                    <Edge cubics="!-226 -2323(;-163,-2323 -127,-2292 -116,-2230q-226 -2323Q-132 -2324q-116 -2230);"/>
+                    <Edge cubics="!-242 -2302(;-239,-2310 -234,-2316 -226,-2323q-242 -2302Q-238 -2313q-226 -2323);"/>
+                    <Edge cubics="!-520 -330(;-518,-369 -518,-409 -520,-448q-520 -330Q-517 -389q-520 -448);"/>
+                    <Edge cubics="!-470 91(;-513,-46 -530,-186 -520,-330q-470 91Q-534 -114q-520 -330);"/>
+                    <Edge cubics="!152 -663(;160,-614 163,-564 159,-514q152 -663Q164 -589q159 -514);"/>
+                    <Edge cubics="!591 13(;609,50 613,90 602,129q591 13Q618 70q602 129);"/>
+                    <Edge cubics="!584 -17(;584,-7 586,3 591,13q584 -17Q584 -2q591 13);"/>
+                    <Edge cubics="!602 129(;576,131 553,129 531,120q602 129Q559 134q531 120);"/>
+                    <Edge cubics="!425 -912(;532,-624 585,-325 584,-17q425 -912Q585 -480q584 -17);"/>
+                    <Edge cubics="!-116 -2230(;-29,-1707 61,-1186 152,-663q-116 -2230Q15 -1447q152 -663);"/>
+                    <Edge cubics="!-398 -1833(;-360,-1994 -308,-2150 -242,-2302q-398 -1833Q-341 -2074q-242 -2302);"/>
+                    <Edge cubics="!-520 -448(;-546,-916 -506,-1377 -398,-1833q-520 -448Q-559 -1149q-398 -1833);"/>
+                    <Edge cubics="!531 120(;531,120 -470,91 -470,91q531 120 -470 91);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

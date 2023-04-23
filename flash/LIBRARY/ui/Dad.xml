@@ -1,0 +1,79 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ui/Dad" itemID="6432f142-00000062" lastModified="1681060625" lastUniqueIdentifier="1">
+  <timeline>
+    <DOMTimeline name="Dad" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="Layer_2" color="#9933CC" current="true" isSelected="true" heightLiteral="32">
+          <frames>
+            <DOMFrame index="0" duration="56" tweenType="motion" motionTweenSnap="true" keyMode="22017" easeMethodName="quadInOut">
+              <tweens>
+                <Ease target="all" method="quadInOut"/>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="ui/DadFire">
+                  <matrix>
+                    <Matrix tx="53.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="56" duration="29" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.466075822902684" y="0.0302448438525438"/>
+                  <Point x="0.728431753160411" y="0.514791314443344"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="ui/DadFire" selected="true" centerPoint3DX="-30.05" centerPoint3DY="2">
+                  <matrix>
+                    <Matrix tx="53.95" ty="44"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="85" duration="30" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.25887627284803" y="0.477361966854631"/>
+                  <Point x="0.526412560375549" y="0.955366406522285"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="ui/DadFire" selected="true" centerPoint3DX="-30.05" centerPoint3DY="-19.25">
+                  <matrix>
+                    <Matrix tx="53.95" ty="22.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="115" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="ui/DadFire" centerPoint3DX="-30.05" centerPoint3DY="-42">
+                  <matrix>
+                    <Matrix tx="53.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>
